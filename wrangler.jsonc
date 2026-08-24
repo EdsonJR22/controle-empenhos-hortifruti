@@ -13,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "controle-empenhos-hortifruti-db",
-      "database_id": "00000000-0000-4000-8000-000000000000",
+      "database_id": "18c548ab-1228-4f97-95fa-4c0f061a228c",
       "migrations_dir": "drizzle"
     }
   ],
