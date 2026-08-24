@@ -1,0 +1,3092 @@
+[
+  {
+    "id": "ne-400022",
+    "number": "400022",
+    "supplier": "Rede Terra",
+    "issueDate": "2026-04-06",
+    "status": "encerrada",
+    "notes": "As NF 9528 e 9540 vieram com preços divergentes da NE. O preço do repolho roxo foi ajustado no pedido final para fechar o saldo do empenho.",
+    "items": [
+      {
+        "id": "ne-400022-item-1",
+        "lineNumber": 1,
+        "description": "Abacaxi Pérola",
+        "unit": "Kg",
+        "contractedQuantity": 200,
+        "unitPriceCents": 827
+      },
+      {
+        "id": "ne-400022-item-2",
+        "lineNumber": 2,
+        "description": "Abóbora Japonesa (cabotiá)",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 570
+      },
+      {
+        "id": "ne-400022-item-5",
+        "lineNumber": 5,
+        "description": "Alface Americana",
+        "unit": "Kg",
+        "contractedQuantity": 400,
+        "unitPriceCents": 1342
+      },
+      {
+        "id": "ne-400022-item-6",
+        "lineNumber": 6,
+        "description": "Alho branco (descascado)",
+        "unit": "Kg",
+        "contractedQuantity": 50,
+        "unitPriceCents": 3500
+      },
+      {
+        "id": "ne-400022-item-7",
+        "lineNumber": 7,
+        "description": "Banana Prata",
+        "unit": "Kg",
+        "contractedQuantity": 400,
+        "unitPriceCents": 814
+      },
+      {
+        "id": "ne-400022-item-8",
+        "lineNumber": 8,
+        "description": "Batata Doce Rosa",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 642
+      },
+      {
+        "id": "ne-400022-item-9",
+        "lineNumber": 9,
+        "description": "Batata Inglesa",
+        "unit": "Kg",
+        "contractedQuantity": 400,
+        "unitPriceCents": 800
+      },
+      {
+        "id": "ne-400022-item-10",
+        "lineNumber": 10,
+        "description": "Beterraba",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 705
+      },
+      {
+        "id": "ne-400022-item-11",
+        "lineNumber": 11,
+        "description": "Brócolis",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 1472
+      },
+      {
+        "id": "ne-400022-item-13",
+        "lineNumber": 13,
+        "description": "Cebola Branca",
+        "unit": "Kg",
+        "contractedQuantity": 200,
+        "unitPriceCents": 800
+      },
+      {
+        "id": "ne-400022-item-14",
+        "lineNumber": 14,
+        "description": "Cebola Roxa",
+        "unit": "Kg",
+        "contractedQuantity": 200,
+        "unitPriceCents": 907
+      },
+      {
+        "id": "ne-400022-item-15",
+        "lineNumber": 15,
+        "description": "Cenoura",
+        "unit": "Kg",
+        "contractedQuantity": 150,
+        "unitPriceCents": 800
+      },
+      {
+        "id": "ne-400022-item-16",
+        "lineNumber": 16,
+        "description": "Chuchu",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 790
+      },
+      {
+        "id": "ne-400022-item-17",
+        "lineNumber": 17,
+        "description": "Coentro",
+        "unit": "Kg",
+        "contractedQuantity": 50,
+        "unitPriceCents": 1500
+      },
+      {
+        "id": "ne-400022-item-18",
+        "lineNumber": 18,
+        "description": "Cebolinha",
+        "unit": "Kg",
+        "contractedQuantity": 50,
+        "unitPriceCents": 1600
+      },
+      {
+        "id": "ne-400022-item-19",
+        "lineNumber": 19,
+        "description": "Couve-flor",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 1365
+      },
+      {
+        "id": "ne-400022-item-20",
+        "lineNumber": 20,
+        "description": "Couve Manteiga",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 1280
+      },
+      {
+        "id": "ne-400022-item-21",
+        "lineNumber": 21,
+        "description": "Kiwi",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 3800
+      },
+      {
+        "id": "ne-400022-item-22",
+        "lineNumber": 22,
+        "description": "Hortelã",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 2625
+      },
+      {
+        "id": "ne-400022-item-23",
+        "lineNumber": 23,
+        "description": "Laranja Pera",
+        "unit": "Kg",
+        "contractedQuantity": 300,
+        "unitPriceCents": 685
+      },
+      {
+        "id": "ne-400022-item-24",
+        "lineNumber": 24,
+        "description": "Limão Tahiti",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 687
+      },
+      {
+        "id": "ne-400022-item-25",
+        "lineNumber": 25,
+        "description": "Maçã Nacional",
+        "unit": "Kg",
+        "contractedQuantity": 200,
+        "unitPriceCents": 1257
+      },
+      {
+        "id": "ne-400022-item-26",
+        "lineNumber": 26,
+        "description": "Mamão Formosa",
+        "unit": "Kg",
+        "contractedQuantity": 50,
+        "unitPriceCents": 812
+      },
+      {
+        "id": "ne-400022-item-27",
+        "lineNumber": 27,
+        "description": "Manga Tommy",
+        "unit": "Kg",
+        "contractedQuantity": 50,
+        "unitPriceCents": 805
+      },
+      {
+        "id": "ne-400022-item-28",
+        "lineNumber": 28,
+        "description": "Morango",
+        "unit": "Kg",
+        "contractedQuantity": 50,
+        "unitPriceCents": 3300
+      },
+      {
+        "id": "ne-400022-item-29",
+        "lineNumber": 29,
+        "description": "Mandioca (descascada)",
+        "unit": "Kg",
+        "contractedQuantity": 200,
+        "unitPriceCents": 807
+      },
+      {
+        "id": "ne-400022-item-30",
+        "lineNumber": 30,
+        "description": "Maracujá",
+        "unit": "Kg",
+        "contractedQuantity": 150,
+        "unitPriceCents": 992
+      },
+      {
+        "id": "ne-400022-item-31",
+        "lineNumber": 31,
+        "description": "Melancia",
+        "unit": "Kg",
+        "contractedQuantity": 500,
+        "unitPriceCents": 557
+      },
+      {
+        "id": "ne-400022-item-32",
+        "lineNumber": 32,
+        "description": "Melão Amarelo",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 772
+      },
+      {
+        "id": "ne-400022-item-35",
+        "lineNumber": 35,
+        "description": "Ovo branco",
+        "unit": "Dz",
+        "contractedQuantity": 300,
+        "unitPriceCents": 1305
+      },
+      {
+        "id": "ne-400022-item-36",
+        "lineNumber": 36,
+        "description": "Pepino japonês",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 742
+      },
+      {
+        "id": "ne-400022-item-37",
+        "lineNumber": 37,
+        "description": "Pimentão verde",
+        "unit": "Kg",
+        "contractedQuantity": 80,
+        "unitPriceCents": 820
+      },
+      {
+        "id": "ne-400022-item-38",
+        "lineNumber": 38,
+        "description": "Pimentão amarelo",
+        "unit": "Kg",
+        "contractedQuantity": 60,
+        "unitPriceCents": 2162
+      },
+      {
+        "id": "ne-400022-item-39",
+        "lineNumber": 39,
+        "description": "Pimentão vermelho",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 2225
+      },
+      {
+        "id": "ne-400022-item-40",
+        "lineNumber": 40,
+        "description": "Pimenta de cheiro",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 2697
+      },
+      {
+        "id": "ne-400022-item-42",
+        "lineNumber": 42,
+        "description": "Repolho Verde",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 677
+      },
+      {
+        "id": "ne-400022-item-43",
+        "lineNumber": 43,
+        "description": "Repolho Roxo",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 716
+      },
+      {
+        "id": "ne-400022-item-44",
+        "lineNumber": 44,
+        "description": "Tomate longa vida",
+        "unit": "Kg",
+        "contractedQuantity": 400,
+        "unitPriceCents": 920
+      },
+      {
+        "id": "ne-400022-item-45",
+        "lineNumber": 45,
+        "description": "Uva Rubi",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 2875
+      },
+      {
+        "id": "ne-400022-item-46",
+        "lineNumber": 46,
+        "description": "Uva Verde",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 2919
+      }
+    ],
+    "orders": [
+      {
+        "id": "ne-400022-order-1",
+        "reference": "NF 9528",
+        "orderDate": "2026-04-06",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 587366,
+        "calculatedTotalCents": 632864,
+        "items": [
+          {
+            "id": "ne-400022-order-1-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-1-item-2",
+            "commitmentItemId": "ne-400022-item-2",
+            "quantity": 20,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400022-order-1-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 60,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-1-item-6",
+            "commitmentItemId": "ne-400022-item-6",
+            "quantity": 6,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400022-order-1-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 50,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-1-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 60,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-1-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 10,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-1-item-13",
+            "commitmentItemId": "ne-400022-item-13",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-1-item-14",
+            "commitmentItemId": "ne-400022-item-14",
+            "quantity": 5,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400022-order-1-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-1-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 3,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-1-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 2,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-1-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-1-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 60,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-1-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 3,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-1-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 3,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-1-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 40,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-1-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 60,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-1-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-1-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 73,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-1-item-36",
+            "commitmentItemId": "ne-400022-item-36",
+            "quantity": 10,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400022-order-1-item-37",
+            "commitmentItemId": "ne-400022-item-37",
+            "quantity": 3,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400022-order-1-item-38",
+            "commitmentItemId": "ne-400022-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400022-order-1-item-39",
+            "commitmentItemId": "ne-400022-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400022-order-1-item-40",
+            "commitmentItemId": "ne-400022-item-40",
+            "quantity": 2,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400022-order-1-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 50,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-1-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 5,
+            "unitPriceCents": 2875
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-2",
+        "reference": "NF 9540",
+        "orderDate": "2026-04-16",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 750342,
+        "calculatedTotalCents": 745444,
+        "items": [
+          {
+            "id": "ne-400022-order-2-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-2-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 32,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-2-item-6",
+            "commitmentItemId": "ne-400022-item-6",
+            "quantity": 5,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400022-order-2-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 60,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-2-item-8",
+            "commitmentItemId": "ne-400022-item-8",
+            "quantity": 51,
+            "unitPriceCents": 642
+          },
+          {
+            "id": "ne-400022-order-2-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-2-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 20,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-2-item-11",
+            "commitmentItemId": "ne-400022-item-11",
+            "quantity": 20,
+            "unitPriceCents": 1472
+          },
+          {
+            "id": "ne-400022-order-2-item-13",
+            "commitmentItemId": "ne-400022-item-13",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-2-item-14",
+            "commitmentItemId": "ne-400022-item-14",
+            "quantity": 5,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400022-order-2-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-2-item-17",
+            "commitmentItemId": "ne-400022-item-17",
+            "quantity": 4,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400022-order-2-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-2-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 15,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-2-item-20",
+            "commitmentItemId": "ne-400022-item-20",
+            "quantity": 7,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400022-order-2-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 4,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-2-item-22",
+            "commitmentItemId": "ne-400022-item-22",
+            "quantity": 5,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400022-order-2-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 40,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-2-item-24",
+            "commitmentItemId": "ne-400022-item-24",
+            "quantity": 20,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400022-order-2-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 50,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-2-item-26",
+            "commitmentItemId": "ne-400022-item-26",
+            "quantity": 7,
+            "unitPriceCents": 812
+          },
+          {
+            "id": "ne-400022-order-2-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 10,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-2-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 5,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-2-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 50,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-2-item-30",
+            "commitmentItemId": "ne-400022-item-30",
+            "quantity": 30,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400022-order-2-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 60,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-2-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 18,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-2-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 60,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-2-item-36",
+            "commitmentItemId": "ne-400022-item-36",
+            "quantity": 20,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400022-order-2-item-37",
+            "commitmentItemId": "ne-400022-item-37",
+            "quantity": 9,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400022-order-2-item-38",
+            "commitmentItemId": "ne-400022-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400022-order-2-item-39",
+            "commitmentItemId": "ne-400022-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400022-order-2-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 30,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-2-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 4,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-2-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-3",
+        "reference": "NF 9541",
+        "orderDate": "2026-04-16",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 641779,
+        "calculatedTotalCents": 641779,
+        "items": [
+          {
+            "id": "ne-400022-order-3-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-3-item-2",
+            "commitmentItemId": "ne-400022-item-2",
+            "quantity": 30,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400022-order-3-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 85,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-3-item-6",
+            "commitmentItemId": "ne-400022-item-6",
+            "quantity": 5,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400022-order-3-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 60,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-3-item-8",
+            "commitmentItemId": "ne-400022-item-8",
+            "quantity": 10,
+            "unitPriceCents": 642
+          },
+          {
+            "id": "ne-400022-order-3-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-3-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 10,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-3-item-13",
+            "commitmentItemId": "ne-400022-item-13",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-3-item-14",
+            "commitmentItemId": "ne-400022-item-14",
+            "quantity": 10,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400022-order-3-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-3-item-17",
+            "commitmentItemId": "ne-400022-item-17",
+            "quantity": 4,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400022-order-3-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-3-item-20",
+            "commitmentItemId": "ne-400022-item-20",
+            "quantity": 10,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400022-order-3-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-3-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 40,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-3-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 7,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-3-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 4,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-3-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 30,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-3-item-30",
+            "commitmentItemId": "ne-400022-item-30",
+            "quantity": 20,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400022-order-3-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 70,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-3-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-3-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 30,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-3-item-36",
+            "commitmentItemId": "ne-400022-item-36",
+            "quantity": 20,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400022-order-3-item-37",
+            "commitmentItemId": "ne-400022-item-37",
+            "quantity": 15,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400022-order-3-item-38",
+            "commitmentItemId": "ne-400022-item-38",
+            "quantity": 3,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400022-order-3-item-39",
+            "commitmentItemId": "ne-400022-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400022-order-3-item-42",
+            "commitmentItemId": "ne-400022-item-42",
+            "quantity": 10,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400022-order-3-item-43",
+            "commitmentItemId": "ne-400022-item-43",
+            "quantity": 10,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400022-order-3-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 40,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-3-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-3-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-4",
+        "reference": "NF 9588",
+        "orderDate": "2026-05-04",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 476634,
+        "calculatedTotalCents": 476634,
+        "items": [
+          {
+            "id": "ne-400022-order-4-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-4-item-2",
+            "commitmentItemId": "ne-400022-item-2",
+            "quantity": 40,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400022-order-4-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 60,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-4-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 30,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-4-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-4-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-4-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 5,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-4-item-20",
+            "commitmentItemId": "ne-400022-item-20",
+            "quantity": 10,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400022-order-4-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 5,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-4-item-22",
+            "commitmentItemId": "ne-400022-item-22",
+            "quantity": 5,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400022-order-4-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-4-item-24",
+            "commitmentItemId": "ne-400022-item-24",
+            "quantity": 20,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400022-order-4-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 40,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-4-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 2,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-4-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 30,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-4-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 70,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-4-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-4-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 30,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-4-item-40",
+            "commitmentItemId": "ne-400022-item-40",
+            "quantity": 3,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400022-order-4-item-42",
+            "commitmentItemId": "ne-400022-item-42",
+            "quantity": 20,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400022-order-4-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 20,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-4-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-4-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-5",
+        "reference": "NF 9653",
+        "orderDate": "2026-05-13",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 515050,
+        "calculatedTotalCents": 515050,
+        "items": [
+          {
+            "id": "ne-400022-order-5-item-2",
+            "commitmentItemId": "ne-400022-item-2",
+            "quantity": 40,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400022-order-5-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 60,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-5-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 30,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-5-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-5-item-17",
+            "commitmentItemId": "ne-400022-item-17",
+            "quantity": 5,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400022-order-5-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-5-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 5,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-5-item-20",
+            "commitmentItemId": "ne-400022-item-20",
+            "quantity": 10,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400022-order-5-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 5,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-5-item-22",
+            "commitmentItemId": "ne-400022-item-22",
+            "quantity": 3,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400022-order-5-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-5-item-24",
+            "commitmentItemId": "ne-400022-item-24",
+            "quantity": 18,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400022-order-5-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 50,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-5-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 5,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-5-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 2,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-5-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 30,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-5-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 70,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-5-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-5-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 30,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-5-item-38",
+            "commitmentItemId": "ne-400022-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400022-order-5-item-39",
+            "commitmentItemId": "ne-400022-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400022-order-5-item-40",
+            "commitmentItemId": "ne-400022-item-40",
+            "quantity": 3,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400022-order-5-item-42",
+            "commitmentItemId": "ne-400022-item-42",
+            "quantity": 10,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400022-order-5-item-43",
+            "commitmentItemId": "ne-400022-item-43",
+            "quantity": 20,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400022-order-5-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 20,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-5-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-5-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-6",
+        "reference": "NF 9662",
+        "orderDate": "2026-05-26",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 826868,
+        "calculatedTotalCents": 826868,
+        "items": [
+          {
+            "id": "ne-400022-order-6-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 30,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-6-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 60,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-6-item-6",
+            "commitmentItemId": "ne-400022-item-6",
+            "quantity": 20,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400022-order-6-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 40,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-6-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 40,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-6-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 20,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-6-item-11",
+            "commitmentItemId": "ne-400022-item-11",
+            "quantity": 20,
+            "unitPriceCents": 1472
+          },
+          {
+            "id": "ne-400022-order-6-item-14",
+            "commitmentItemId": "ne-400022-item-14",
+            "quantity": 10,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400022-order-6-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-6-item-16",
+            "commitmentItemId": "ne-400022-item-16",
+            "quantity": 20,
+            "unitPriceCents": 790
+          },
+          {
+            "id": "ne-400022-order-6-item-17",
+            "commitmentItemId": "ne-400022-item-17",
+            "quantity": 5,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400022-order-6-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-6-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 20,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-6-item-20",
+            "commitmentItemId": "ne-400022-item-20",
+            "quantity": 20,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400022-order-6-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 5,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-6-item-22",
+            "commitmentItemId": "ne-400022-item-22",
+            "quantity": 5,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400022-order-6-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-6-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 45,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-6-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 5,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-6-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 2,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-6-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 30,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-6-item-30",
+            "commitmentItemId": "ne-400022-item-30",
+            "quantity": 20,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400022-order-6-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 110,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-6-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 30,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-6-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 60,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-6-item-36",
+            "commitmentItemId": "ne-400022-item-36",
+            "quantity": 10,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400022-order-6-item-37",
+            "commitmentItemId": "ne-400022-item-37",
+            "quantity": 10,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400022-order-6-item-42",
+            "commitmentItemId": "ne-400022-item-42",
+            "quantity": 10,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400022-order-6-item-43",
+            "commitmentItemId": "ne-400022-item-43",
+            "quantity": 20,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400022-order-6-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 60,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-6-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-6-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-7",
+        "reference": "NF 9732",
+        "orderDate": "2026-06-23",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 635458,
+        "calculatedTotalCents": 635458,
+        "items": [
+          {
+            "id": "ne-400022-order-7-item-2",
+            "commitmentItemId": "ne-400022-item-2",
+            "quantity": 20,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400022-order-7-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 40,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-7-item-6",
+            "commitmentItemId": "ne-400022-item-6",
+            "quantity": 15,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400022-order-7-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 50,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-7-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 46,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-7-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 20,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-7-item-11",
+            "commitmentItemId": "ne-400022-item-11",
+            "quantity": 10,
+            "unitPriceCents": 1472
+          },
+          {
+            "id": "ne-400022-order-7-item-13",
+            "commitmentItemId": "ne-400022-item-13",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-7-item-14",
+            "commitmentItemId": "ne-400022-item-14",
+            "quantity": 6,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400022-order-7-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 13,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-7-item-17",
+            "commitmentItemId": "ne-400022-item-17",
+            "quantity": 5,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400022-order-7-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-7-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 10,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-7-item-22",
+            "commitmentItemId": "ne-400022-item-22",
+            "quantity": 5,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400022-order-7-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-7-item-24",
+            "commitmentItemId": "ne-400022-item-24",
+            "quantity": 8,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400022-order-7-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 40,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-7-item-26",
+            "commitmentItemId": "ne-400022-item-26",
+            "quantity": 6,
+            "unitPriceCents": 812
+          },
+          {
+            "id": "ne-400022-order-7-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 5,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-7-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 40,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-7-item-30",
+            "commitmentItemId": "ne-400022-item-30",
+            "quantity": 20,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400022-order-7-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 80,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-7-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-7-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 40,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-7-item-36",
+            "commitmentItemId": "ne-400022-item-36",
+            "quantity": 10,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400022-order-7-item-37",
+            "commitmentItemId": "ne-400022-item-37",
+            "quantity": 10,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400022-order-7-item-38",
+            "commitmentItemId": "ne-400022-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400022-order-7-item-39",
+            "commitmentItemId": "ne-400022-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400022-order-7-item-42",
+            "commitmentItemId": "ne-400022-item-42",
+            "quantity": 10,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400022-order-7-item-43",
+            "commitmentItemId": "ne-400022-item-43",
+            "quantity": 10,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400022-order-7-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 40,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-7-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-7-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-8",
+        "reference": "NF 9733",
+        "orderDate": "2026-06-23",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 608704,
+        "calculatedTotalCents": 608704,
+        "items": [
+          {
+            "id": "ne-400022-order-8-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-8-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 40,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-8-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 50,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-8-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 50,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-8-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 10,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-8-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 15,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-8-item-17",
+            "commitmentItemId": "ne-400022-item-17",
+            "quantity": 5,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400022-order-8-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-8-item-19",
+            "commitmentItemId": "ne-400022-item-19",
+            "quantity": 10,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400022-order-8-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 3,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-8-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-8-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 40,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-8-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 3,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-8-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 2,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-8-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 40,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-8-item-30",
+            "commitmentItemId": "ne-400022-item-30",
+            "quantity": 20,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400022-order-8-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 60,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-8-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-8-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 90,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-8-item-36",
+            "commitmentItemId": "ne-400022-item-36",
+            "quantity": 10,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400022-order-8-item-37",
+            "commitmentItemId": "ne-400022-item-37",
+            "quantity": 5,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400022-order-8-item-38",
+            "commitmentItemId": "ne-400022-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400022-order-8-item-39",
+            "commitmentItemId": "ne-400022-item-39",
+            "quantity": 3,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400022-order-8-item-40",
+            "commitmentItemId": "ne-400022-item-40",
+            "quantity": 3,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400022-order-8-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 60,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-8-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-8-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400022-order-9",
+        "reference": "Pedido em aberto",
+        "orderDate": "2026-06-24",
+        "status": "rascunho",
+        "notes": "",
+        "totalCents": 527189,
+        "calculatedTotalCents": 527189,
+        "items": [
+          {
+            "id": "ne-400022-order-9-item-1",
+            "commitmentItemId": "ne-400022-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400022-order-9-item-2",
+            "commitmentItemId": "ne-400022-item-2",
+            "quantity": 30,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400022-order-9-item-5",
+            "commitmentItemId": "ne-400022-item-5",
+            "quantity": 51,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400022-order-9-item-7",
+            "commitmentItemId": "ne-400022-item-7",
+            "quantity": 50,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400022-order-9-item-9",
+            "commitmentItemId": "ne-400022-item-9",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-9-item-10",
+            "commitmentItemId": "ne-400022-item-10",
+            "quantity": 15,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400022-order-9-item-13",
+            "commitmentItemId": "ne-400022-item-13",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-9-item-15",
+            "commitmentItemId": "ne-400022-item-15",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400022-order-9-item-18",
+            "commitmentItemId": "ne-400022-item-18",
+            "quantity": 2,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400022-order-9-item-21",
+            "commitmentItemId": "ne-400022-item-21",
+            "quantity": 5,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400022-order-9-item-23",
+            "commitmentItemId": "ne-400022-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400022-order-9-item-24",
+            "commitmentItemId": "ne-400022-item-24",
+            "quantity": 10,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400022-order-9-item-25",
+            "commitmentItemId": "ne-400022-item-25",
+            "quantity": 30,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400022-order-9-item-27",
+            "commitmentItemId": "ne-400022-item-27",
+            "quantity": 5,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400022-order-9-item-28",
+            "commitmentItemId": "ne-400022-item-28",
+            "quantity": 3,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400022-order-9-item-29",
+            "commitmentItemId": "ne-400022-item-29",
+            "quantity": 30,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400022-order-9-item-30",
+            "commitmentItemId": "ne-400022-item-30",
+            "quantity": 10,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400022-order-9-item-31",
+            "commitmentItemId": "ne-400022-item-31",
+            "quantity": 70,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400022-order-9-item-32",
+            "commitmentItemId": "ne-400022-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400022-order-9-item-35",
+            "commitmentItemId": "ne-400022-item-35",
+            "quantity": 50,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400022-order-9-item-42",
+            "commitmentItemId": "ne-400022-item-42",
+            "quantity": 20,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400022-order-9-item-43",
+            "commitmentItemId": "ne-400022-item-43",
+            "quantity": 1,
+            "unitPriceCents": 695
+          },
+          {
+            "id": "ne-400022-order-9-item-44",
+            "commitmentItemId": "ne-400022-item-44",
+            "quantity": 50,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400022-order-9-item-45",
+            "commitmentItemId": "ne-400022-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400022-order-9-item-46",
+            "commitmentItemId": "ne-400022-item-46",
+            "quantity": 3,
+            "unitPriceCents": 2919
+          }
+        ]
+      }
+    ],
+    "totalCents": 5569390,
+    "orderedCents": 5569390,
+    "balanceCents": 0
+  },
+  {
+    "id": "ne-400149",
+    "number": "400149",
+    "supplier": "Rede Terra",
+    "issueDate": "2026-07-21",
+    "status": "ativa",
+    "notes": "Controle importado da planilha enviada.",
+    "items": [
+      {
+        "id": "ne-400149-item-1",
+        "lineNumber": 1,
+        "description": "Abacaxi Pérola",
+        "unit": "Kg",
+        "contractedQuantity": 160,
+        "unitPriceCents": 827
+      },
+      {
+        "id": "ne-400149-item-2",
+        "lineNumber": 2,
+        "description": "Abóbora Japonesa (cabotiá)",
+        "unit": "Kg",
+        "contractedQuantity": 120,
+        "unitPriceCents": 570
+      },
+      {
+        "id": "ne-400149-item-3",
+        "lineNumber": 3,
+        "description": "Abóbora Moranga",
+        "unit": "Kg",
+        "contractedQuantity": 80,
+        "unitPriceCents": 638
+      },
+      {
+        "id": "ne-400149-item-4",
+        "lineNumber": 4,
+        "description": "Abobrinha Brasileira",
+        "unit": "Kg",
+        "contractedQuantity": 60,
+        "unitPriceCents": 630
+      },
+      {
+        "id": "ne-400149-item-5",
+        "lineNumber": 5,
+        "description": "Alface Americana",
+        "unit": "Kg",
+        "contractedQuantity": 160,
+        "unitPriceCents": 1342
+      },
+      {
+        "id": "ne-400149-item-6",
+        "lineNumber": 6,
+        "description": "Alho branco (descascado)",
+        "unit": "Kg",
+        "contractedQuantity": 40,
+        "unitPriceCents": 3500
+      },
+      {
+        "id": "ne-400149-item-7",
+        "lineNumber": 7,
+        "description": "Banana Prata",
+        "unit": "Kg",
+        "contractedQuantity": 200,
+        "unitPriceCents": 814
+      },
+      {
+        "id": "ne-400149-item-8",
+        "lineNumber": 8,
+        "description": "Batata Doce Rosa",
+        "unit": "Kg",
+        "contractedQuantity": 170,
+        "unitPriceCents": 642
+      },
+      {
+        "id": "ne-400149-item-9",
+        "lineNumber": 9,
+        "description": "Batata Inglesa",
+        "unit": "Kg",
+        "contractedQuantity": 180,
+        "unitPriceCents": 800
+      },
+      {
+        "id": "ne-400149-item-10",
+        "lineNumber": 10,
+        "description": "Beterraba",
+        "unit": "Kg",
+        "contractedQuantity": 180,
+        "unitPriceCents": 705
+      },
+      {
+        "id": "ne-400149-item-11",
+        "lineNumber": 11,
+        "description": "Brócolis",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 1472
+      },
+      {
+        "id": "ne-400149-item-13",
+        "lineNumber": 13,
+        "description": "Cebola Branca",
+        "unit": "Kg",
+        "contractedQuantity": 160,
+        "unitPriceCents": 800
+      },
+      {
+        "id": "ne-400149-item-14",
+        "lineNumber": 14,
+        "description": "Cebola Roxa",
+        "unit": "Kg",
+        "contractedQuantity": 40,
+        "unitPriceCents": 907
+      },
+      {
+        "id": "ne-400149-item-15",
+        "lineNumber": 15,
+        "description": "Cenoura",
+        "unit": "Kg",
+        "contractedQuantity": 160,
+        "unitPriceCents": 800
+      },
+      {
+        "id": "ne-400149-item-17",
+        "lineNumber": 17,
+        "description": "Coentro",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 1500
+      },
+      {
+        "id": "ne-400149-item-18",
+        "lineNumber": 18,
+        "description": "Cebolinha",
+        "unit": "Kg",
+        "contractedQuantity": 80,
+        "unitPriceCents": 1600
+      },
+      {
+        "id": "ne-400149-item-19",
+        "lineNumber": 19,
+        "description": "Couve-flor",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 1365
+      },
+      {
+        "id": "ne-400149-item-20",
+        "lineNumber": 20,
+        "description": "Couve Manteiga",
+        "unit": "Kg",
+        "contractedQuantity": 100,
+        "unitPriceCents": 1280
+      },
+      {
+        "id": "ne-400149-item-21",
+        "lineNumber": 21,
+        "description": "Kiwi",
+        "unit": "Kg",
+        "contractedQuantity": 10,
+        "unitPriceCents": 3800
+      },
+      {
+        "id": "ne-400149-item-22",
+        "lineNumber": 22,
+        "description": "Hortelã",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 2625
+      },
+      {
+        "id": "ne-400149-item-23",
+        "lineNumber": 23,
+        "description": "Laranja Pera",
+        "unit": "Kg",
+        "contractedQuantity": 150,
+        "unitPriceCents": 685
+      },
+      {
+        "id": "ne-400149-item-24",
+        "lineNumber": 24,
+        "description": "Limão Tahiti",
+        "unit": "Kg",
+        "contractedQuantity": 60,
+        "unitPriceCents": 687
+      },
+      {
+        "id": "ne-400149-item-25",
+        "lineNumber": 25,
+        "description": "Maçã Nacional",
+        "unit": "Kg",
+        "contractedQuantity": 180,
+        "unitPriceCents": 1257
+      },
+      {
+        "id": "ne-400149-item-26",
+        "lineNumber": 26,
+        "description": "Mamão Formosa",
+        "unit": "Kg",
+        "contractedQuantity": 80,
+        "unitPriceCents": 812
+      },
+      {
+        "id": "ne-400149-item-27",
+        "lineNumber": 27,
+        "description": "Manga Tommy",
+        "unit": "Kg",
+        "contractedQuantity": 60,
+        "unitPriceCents": 805
+      },
+      {
+        "id": "ne-400149-item-28",
+        "lineNumber": 28,
+        "description": "Morango",
+        "unit": "Kg",
+        "contractedQuantity": 18,
+        "unitPriceCents": 3300
+      },
+      {
+        "id": "ne-400149-item-29",
+        "lineNumber": 29,
+        "description": "Mandioca (descascada)",
+        "unit": "Kg",
+        "contractedQuantity": 240,
+        "unitPriceCents": 807
+      },
+      {
+        "id": "ne-400149-item-30",
+        "lineNumber": 30,
+        "description": "Maracujá",
+        "unit": "Kg",
+        "contractedQuantity": 40,
+        "unitPriceCents": 992
+      },
+      {
+        "id": "ne-400149-item-31",
+        "lineNumber": 31,
+        "description": "Melancia",
+        "unit": "Kg",
+        "contractedQuantity": 460,
+        "unitPriceCents": 557
+      },
+      {
+        "id": "ne-400149-item-32",
+        "lineNumber": 32,
+        "description": "Melão Amarelo",
+        "unit": "Kg",
+        "contractedQuantity": 150,
+        "unitPriceCents": 772
+      },
+      {
+        "id": "ne-400149-item-33",
+        "lineNumber": 33,
+        "description": "Mel de Abelha",
+        "unit": "Kg",
+        "contractedQuantity": 5,
+        "unitPriceCents": 6093
+      },
+      {
+        "id": "ne-400149-item-35",
+        "lineNumber": 35,
+        "description": "Ovo branco",
+        "unit": "Dz",
+        "contractedQuantity": 300,
+        "unitPriceCents": 1305
+      },
+      {
+        "id": "ne-400149-item-36",
+        "lineNumber": 36,
+        "description": "Pepino japonês",
+        "unit": "Kg",
+        "contractedQuantity": 80,
+        "unitPriceCents": 742
+      },
+      {
+        "id": "ne-400149-item-37",
+        "lineNumber": 37,
+        "description": "Pimentão verde",
+        "unit": "Kg",
+        "contractedQuantity": 30,
+        "unitPriceCents": 820
+      },
+      {
+        "id": "ne-400149-item-38",
+        "lineNumber": 38,
+        "description": "Pimentão amarelo",
+        "unit": "Kg",
+        "contractedQuantity": 10,
+        "unitPriceCents": 2162
+      },
+      {
+        "id": "ne-400149-item-39",
+        "lineNumber": 39,
+        "description": "Pimentão vermelho",
+        "unit": "Kg",
+        "contractedQuantity": 10,
+        "unitPriceCents": 2225
+      },
+      {
+        "id": "ne-400149-item-40",
+        "lineNumber": 40,
+        "description": "Pimenta de cheiro",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 2697
+      },
+      {
+        "id": "ne-400149-item-42",
+        "lineNumber": 42,
+        "description": "Repolho Verde",
+        "unit": "Kg",
+        "contractedQuantity": 60,
+        "unitPriceCents": 677
+      },
+      {
+        "id": "ne-400149-item-43",
+        "lineNumber": 43,
+        "description": "Repolho Roxo",
+        "unit": "Kg",
+        "contractedQuantity": 60,
+        "unitPriceCents": 716
+      },
+      {
+        "id": "ne-400149-item-44",
+        "lineNumber": 44,
+        "description": "Tomate longa vida",
+        "unit": "Kg",
+        "contractedQuantity": 274,
+        "unitPriceCents": 920
+      },
+      {
+        "id": "ne-400149-item-45",
+        "lineNumber": 45,
+        "description": "Uva Rubi",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 2875
+      },
+      {
+        "id": "ne-400149-item-46",
+        "lineNumber": 46,
+        "description": "Uva Verde",
+        "unit": "Kg",
+        "contractedQuantity": 20,
+        "unitPriceCents": 2919
+      }
+    ],
+    "orders": [
+      {
+        "id": "ne-400149-order-1",
+        "reference": "NF 9829",
+        "orderDate": "2026-07-21",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 786813,
+        "calculatedTotalCents": 786813,
+        "items": [
+          {
+            "id": "ne-400149-order-1-item-1",
+            "commitmentItemId": "ne-400149-item-1",
+            "quantity": 30,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400149-order-1-item-2",
+            "commitmentItemId": "ne-400149-item-2",
+            "quantity": 20,
+            "unitPriceCents": 570
+          },
+          {
+            "id": "ne-400149-order-1-item-3",
+            "commitmentItemId": "ne-400149-item-3",
+            "quantity": 20,
+            "unitPriceCents": 638
+          },
+          {
+            "id": "ne-400149-order-1-item-4",
+            "commitmentItemId": "ne-400149-item-4",
+            "quantity": 10,
+            "unitPriceCents": 630
+          },
+          {
+            "id": "ne-400149-order-1-item-5",
+            "commitmentItemId": "ne-400149-item-5",
+            "quantity": 60,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400149-order-1-item-6",
+            "commitmentItemId": "ne-400149-item-6",
+            "quantity": 5,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400149-order-1-item-7",
+            "commitmentItemId": "ne-400149-item-7",
+            "quantity": 40,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400149-order-1-item-8",
+            "commitmentItemId": "ne-400149-item-8",
+            "quantity": 10,
+            "unitPriceCents": 642
+          },
+          {
+            "id": "ne-400149-order-1-item-9",
+            "commitmentItemId": "ne-400149-item-9",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-1-item-10",
+            "commitmentItemId": "ne-400149-item-10",
+            "quantity": 30,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400149-order-1-item-11",
+            "commitmentItemId": "ne-400149-item-11",
+            "quantity": 5,
+            "unitPriceCents": 1472
+          },
+          {
+            "id": "ne-400149-order-1-item-13",
+            "commitmentItemId": "ne-400149-item-13",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-1-item-14",
+            "commitmentItemId": "ne-400149-item-14",
+            "quantity": 10,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400149-order-1-item-15",
+            "commitmentItemId": "ne-400149-item-15",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-1-item-17",
+            "commitmentItemId": "ne-400149-item-17",
+            "quantity": 5,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400149-order-1-item-18",
+            "commitmentItemId": "ne-400149-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400149-order-1-item-20",
+            "commitmentItemId": "ne-400149-item-20",
+            "quantity": 33,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400149-order-1-item-22",
+            "commitmentItemId": "ne-400149-item-22",
+            "quantity": 5,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400149-order-1-item-23",
+            "commitmentItemId": "ne-400149-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400149-order-1-item-24",
+            "commitmentItemId": "ne-400149-item-24",
+            "quantity": 10,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400149-order-1-item-25",
+            "commitmentItemId": "ne-400149-item-25",
+            "quantity": 30,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400149-order-1-item-26",
+            "commitmentItemId": "ne-400149-item-26",
+            "quantity": 20,
+            "unitPriceCents": 812
+          },
+          {
+            "id": "ne-400149-order-1-item-27",
+            "commitmentItemId": "ne-400149-item-27",
+            "quantity": 10,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400149-order-1-item-28",
+            "commitmentItemId": "ne-400149-item-28",
+            "quantity": 5,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400149-order-1-item-29",
+            "commitmentItemId": "ne-400149-item-29",
+            "quantity": 50,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400149-order-1-item-30",
+            "commitmentItemId": "ne-400149-item-30",
+            "quantity": 10,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400149-order-1-item-31",
+            "commitmentItemId": "ne-400149-item-31",
+            "quantity": 60,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400149-order-1-item-32",
+            "commitmentItemId": "ne-400149-item-32",
+            "quantity": 30,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400149-order-1-item-35",
+            "commitmentItemId": "ne-400149-item-35",
+            "quantity": 60,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400149-order-1-item-36",
+            "commitmentItemId": "ne-400149-item-36",
+            "quantity": 20,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400149-order-1-item-37",
+            "commitmentItemId": "ne-400149-item-37",
+            "quantity": 5,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400149-order-1-item-38",
+            "commitmentItemId": "ne-400149-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400149-order-1-item-39",
+            "commitmentItemId": "ne-400149-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400149-order-1-item-40",
+            "commitmentItemId": "ne-400149-item-40",
+            "quantity": 3,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400149-order-1-item-42",
+            "commitmentItemId": "ne-400149-item-42",
+            "quantity": 10,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400149-order-1-item-43",
+            "commitmentItemId": "ne-400149-item-43",
+            "quantity": 10,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400149-order-1-item-44",
+            "commitmentItemId": "ne-400149-item-44",
+            "quantity": 80,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400149-order-1-item-45",
+            "commitmentItemId": "ne-400149-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400149-order-1-item-46",
+            "commitmentItemId": "ne-400149-item-46",
+            "quantity": 3,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400149-order-2",
+        "reference": "NF 9840",
+        "orderDate": "2026-08-04",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 545220,
+        "calculatedTotalCents": 545220,
+        "items": [
+          {
+            "id": "ne-400149-order-2-item-1",
+            "commitmentItemId": "ne-400149-item-1",
+            "quantity": 10,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400149-order-2-item-5",
+            "commitmentItemId": "ne-400149-item-5",
+            "quantity": 20,
+            "unitPriceCents": 1342
+          },
+          {
+            "id": "ne-400149-order-2-item-6",
+            "commitmentItemId": "ne-400149-item-6",
+            "quantity": 5,
+            "unitPriceCents": 3500
+          },
+          {
+            "id": "ne-400149-order-2-item-7",
+            "commitmentItemId": "ne-400149-item-7",
+            "quantity": 40,
+            "unitPriceCents": 814
+          },
+          {
+            "id": "ne-400149-order-2-item-8",
+            "commitmentItemId": "ne-400149-item-8",
+            "quantity": 10,
+            "unitPriceCents": 642
+          },
+          {
+            "id": "ne-400149-order-2-item-9",
+            "commitmentItemId": "ne-400149-item-9",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-2-item-10",
+            "commitmentItemId": "ne-400149-item-10",
+            "quantity": 20,
+            "unitPriceCents": 705
+          },
+          {
+            "id": "ne-400149-order-2-item-11",
+            "commitmentItemId": "ne-400149-item-11",
+            "quantity": 5,
+            "unitPriceCents": 1472
+          },
+          {
+            "id": "ne-400149-order-2-item-13",
+            "commitmentItemId": "ne-400149-item-13",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-2-item-14",
+            "commitmentItemId": "ne-400149-item-14",
+            "quantity": 5,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400149-order-2-item-15",
+            "commitmentItemId": "ne-400149-item-15",
+            "quantity": 10,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-2-item-17",
+            "commitmentItemId": "ne-400149-item-17",
+            "quantity": 5,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400149-order-2-item-18",
+            "commitmentItemId": "ne-400149-item-18",
+            "quantity": 5,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400149-order-2-item-19",
+            "commitmentItemId": "ne-400149-item-19",
+            "quantity": 5,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400149-order-2-item-20",
+            "commitmentItemId": "ne-400149-item-20",
+            "quantity": 17,
+            "unitPriceCents": 1280
+          },
+          {
+            "id": "ne-400149-order-2-item-21",
+            "commitmentItemId": "ne-400149-item-21",
+            "quantity": 5,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400149-order-2-item-22",
+            "commitmentItemId": "ne-400149-item-22",
+            "quantity": 5,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400149-order-2-item-23",
+            "commitmentItemId": "ne-400149-item-23",
+            "quantity": 20,
+            "unitPriceCents": 685
+          },
+          {
+            "id": "ne-400149-order-2-item-24",
+            "commitmentItemId": "ne-400149-item-24",
+            "quantity": 10,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400149-order-2-item-25",
+            "commitmentItemId": "ne-400149-item-25",
+            "quantity": 30,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400149-order-2-item-26",
+            "commitmentItemId": "ne-400149-item-26",
+            "quantity": 10,
+            "unitPriceCents": 812
+          },
+          {
+            "id": "ne-400149-order-2-item-27",
+            "commitmentItemId": "ne-400149-item-27",
+            "quantity": 5,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400149-order-2-item-31",
+            "commitmentItemId": "ne-400149-item-31",
+            "quantity": 60,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400149-order-2-item-32",
+            "commitmentItemId": "ne-400149-item-32",
+            "quantity": 30,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400149-order-2-item-35",
+            "commitmentItemId": "ne-400149-item-35",
+            "quantity": 60,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400149-order-2-item-36",
+            "commitmentItemId": "ne-400149-item-36",
+            "quantity": 15,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400149-order-2-item-37",
+            "commitmentItemId": "ne-400149-item-37",
+            "quantity": 5,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400149-order-2-item-38",
+            "commitmentItemId": "ne-400149-item-38",
+            "quantity": 3,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400149-order-2-item-39",
+            "commitmentItemId": "ne-400149-item-39",
+            "quantity": 3,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400149-order-2-item-40",
+            "commitmentItemId": "ne-400149-item-40",
+            "quantity": 4,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400149-order-2-item-42",
+            "commitmentItemId": "ne-400149-item-42",
+            "quantity": 5,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400149-order-2-item-43",
+            "commitmentItemId": "ne-400149-item-43",
+            "quantity": 5,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400149-order-2-item-44",
+            "commitmentItemId": "ne-400149-item-44",
+            "quantity": 40,
+            "unitPriceCents": 920
+          },
+          {
+            "id": "ne-400149-order-2-item-45",
+            "commitmentItemId": "ne-400149-item-45",
+            "quantity": 4,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400149-order-2-item-46",
+            "commitmentItemId": "ne-400149-item-46",
+            "quantity": 4,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400149-order-3",
+        "reference": "NF 9854",
+        "orderDate": "2026-08-20",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 298019,
+        "calculatedTotalCents": 298019,
+        "items": [
+          {
+            "id": "ne-400149-order-3-item-1",
+            "commitmentItemId": "ne-400149-item-1",
+            "quantity": 25,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400149-order-3-item-15",
+            "commitmentItemId": "ne-400149-item-15",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-3-item-17",
+            "commitmentItemId": "ne-400149-item-17",
+            "quantity": 10,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400149-order-3-item-18",
+            "commitmentItemId": "ne-400149-item-18",
+            "quantity": 10,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400149-order-3-item-21",
+            "commitmentItemId": "ne-400149-item-21",
+            "quantity": 3,
+            "unitPriceCents": 3800
+          },
+          {
+            "id": "ne-400149-order-3-item-22",
+            "commitmentItemId": "ne-400149-item-22",
+            "quantity": 15,
+            "unitPriceCents": 2625
+          },
+          {
+            "id": "ne-400149-order-3-item-24",
+            "commitmentItemId": "ne-400149-item-24",
+            "quantity": 20,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400149-order-3-item-26",
+            "commitmentItemId": "ne-400149-item-26",
+            "quantity": 10,
+            "unitPriceCents": 812
+          },
+          {
+            "id": "ne-400149-order-3-item-27",
+            "commitmentItemId": "ne-400149-item-27",
+            "quantity": 10,
+            "unitPriceCents": 805
+          },
+          {
+            "id": "ne-400149-order-3-item-28",
+            "commitmentItemId": "ne-400149-item-28",
+            "quantity": 3,
+            "unitPriceCents": 3300
+          },
+          {
+            "id": "ne-400149-order-3-item-29",
+            "commitmentItemId": "ne-400149-item-29",
+            "quantity": 50,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400149-order-3-item-30",
+            "commitmentItemId": "ne-400149-item-30",
+            "quantity": 40,
+            "unitPriceCents": 992
+          },
+          {
+            "id": "ne-400149-order-3-item-31",
+            "commitmentItemId": "ne-400149-item-31",
+            "quantity": 20,
+            "unitPriceCents": 557
+          },
+          {
+            "id": "ne-400149-order-3-item-37",
+            "commitmentItemId": "ne-400149-item-37",
+            "quantity": 5,
+            "unitPriceCents": 820
+          },
+          {
+            "id": "ne-400149-order-3-item-38",
+            "commitmentItemId": "ne-400149-item-38",
+            "quantity": 5,
+            "unitPriceCents": 2162
+          },
+          {
+            "id": "ne-400149-order-3-item-39",
+            "commitmentItemId": "ne-400149-item-39",
+            "quantity": 5,
+            "unitPriceCents": 2225
+          },
+          {
+            "id": "ne-400149-order-3-item-40",
+            "commitmentItemId": "ne-400149-item-40",
+            "quantity": 3,
+            "unitPriceCents": 2697
+          },
+          {
+            "id": "ne-400149-order-3-item-45",
+            "commitmentItemId": "ne-400149-item-45",
+            "quantity": 3,
+            "unitPriceCents": 2875
+          },
+          {
+            "id": "ne-400149-order-3-item-46",
+            "commitmentItemId": "ne-400149-item-46",
+            "quantity": 2,
+            "unitPriceCents": 2919
+          }
+        ]
+      },
+      {
+        "id": "ne-400149-order-4",
+        "reference": "NF 9855",
+        "orderDate": "2026-08-20",
+        "status": "faturado",
+        "notes": "",
+        "totalCents": 114040,
+        "calculatedTotalCents": 114040,
+        "items": [
+          {
+            "id": "ne-400149-order-4-item-9",
+            "commitmentItemId": "ne-400149-item-9",
+            "quantity": 30,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-4-item-29",
+            "commitmentItemId": "ne-400149-item-29",
+            "quantity": 30,
+            "unitPriceCents": 807
+          },
+          {
+            "id": "ne-400149-order-4-item-35",
+            "commitmentItemId": "ne-400149-item-35",
+            "quantity": 30,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400149-order-4-item-44",
+            "commitmentItemId": "ne-400149-item-44",
+            "quantity": 29,
+            "unitPriceCents": 920
+          }
+        ]
+      },
+      {
+        "id": "ne-400149-order-5",
+        "reference": "Pedido em aberto",
+        "orderDate": "2026-08-24",
+        "status": "rascunho",
+        "notes": "",
+        "totalCents": 247925,
+        "calculatedTotalCents": 247925,
+        "items": [
+          {
+            "id": "ne-400149-order-5-item-1",
+            "commitmentItemId": "ne-400149-item-1",
+            "quantity": 20,
+            "unitPriceCents": 827
+          },
+          {
+            "id": "ne-400149-order-5-item-11",
+            "commitmentItemId": "ne-400149-item-11",
+            "quantity": 10,
+            "unitPriceCents": 1472
+          },
+          {
+            "id": "ne-400149-order-5-item-13",
+            "commitmentItemId": "ne-400149-item-13",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-5-item-14",
+            "commitmentItemId": "ne-400149-item-14",
+            "quantity": 5,
+            "unitPriceCents": 907
+          },
+          {
+            "id": "ne-400149-order-5-item-15",
+            "commitmentItemId": "ne-400149-item-15",
+            "quantity": 20,
+            "unitPriceCents": 800
+          },
+          {
+            "id": "ne-400149-order-5-item-17",
+            "commitmentItemId": "ne-400149-item-17",
+            "quantity": 3,
+            "unitPriceCents": 1500
+          },
+          {
+            "id": "ne-400149-order-5-item-18",
+            "commitmentItemId": "ne-400149-item-18",
+            "quantity": 10,
+            "unitPriceCents": 1600
+          },
+          {
+            "id": "ne-400149-order-5-item-19",
+            "commitmentItemId": "ne-400149-item-19",
+            "quantity": 5,
+            "unitPriceCents": 1365
+          },
+          {
+            "id": "ne-400149-order-5-item-24",
+            "commitmentItemId": "ne-400149-item-24",
+            "quantity": 5,
+            "unitPriceCents": 687
+          },
+          {
+            "id": "ne-400149-order-5-item-25",
+            "commitmentItemId": "ne-400149-item-25",
+            "quantity": 30,
+            "unitPriceCents": 1257
+          },
+          {
+            "id": "ne-400149-order-5-item-26",
+            "commitmentItemId": "ne-400149-item-26",
+            "quantity": 10,
+            "unitPriceCents": 812
+          },
+          {
+            "id": "ne-400149-order-5-item-32",
+            "commitmentItemId": "ne-400149-item-32",
+            "quantity": 20,
+            "unitPriceCents": 772
+          },
+          {
+            "id": "ne-400149-order-5-item-35",
+            "commitmentItemId": "ne-400149-item-35",
+            "quantity": 30,
+            "unitPriceCents": 1305
+          },
+          {
+            "id": "ne-400149-order-5-item-36",
+            "commitmentItemId": "ne-400149-item-36",
+            "quantity": 10,
+            "unitPriceCents": 742
+          },
+          {
+            "id": "ne-400149-order-5-item-42",
+            "commitmentItemId": "ne-400149-item-42",
+            "quantity": 10,
+            "unitPriceCents": 677
+          },
+          {
+            "id": "ne-400149-order-5-item-43",
+            "commitmentItemId": "ne-400149-item-43",
+            "quantity": 10,
+            "unitPriceCents": 716
+          },
+          {
+            "id": "ne-400149-order-5-item-44",
+            "commitmentItemId": "ne-400149-item-44",
+            "quantity": 30,
+            "unitPriceCents": 920
+          }
+        ]
+      }
+    ],
+    "totalCents": 4145905,
+    "orderedCents": 1992017,
+    "balanceCents": 2153888
+  }
+]
