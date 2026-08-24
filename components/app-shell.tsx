@@ -18,6 +18,10 @@ export function AppShell({
   const inCommitment = pathname.startsWith("/empenhos/");
   const inArchived = pathname.startsWith("/arquivadas");
 
+  if (pathname === "/login" || pathname === "/login/") {
+    return <main className="login-main">{children}</main>;
+  }
+
   return (
     <div className="app-shell">
       <button
@@ -76,10 +80,15 @@ export function AppShell({
 
         <div className="profile-card">
           <span className="avatar">{initials(displayName)}</span>
-          <span>
+          <span className="profile-copy">
             <strong>{displayName}</strong>
             <small>Acesso operacional</small>
           </span>
+          <form className="logout-form" action="/api/auth/logout" method="post">
+            <button className="logout-button" type="submit" aria-label="Sair do sistema" title="Sair">
+              <Icon name="logout" />
+            </button>
+          </form>
         </div>
       </aside>
       {mobileOpen && (

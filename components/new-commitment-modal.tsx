@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import { formatCurrency, todayIso } from "../lib/format";
 import type { ApiErrorBody, CreateCommitmentPayload } from "../lib/types";
 import { Icon } from "./icon";
@@ -95,7 +96,7 @@ export function NewCommitmentModal({
 
     setSaving(true);
     try {
-      const response = await fetch("/api/commitments", {
+      const response = await apiFetch("/api/commitments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

@@ -11,6 +11,7 @@ export type IconName =
   | "file"
   | "edit"
   | "leaf"
+  | "logout"
   | "menu"
   | "package"
   | "plus"
@@ -78,6 +79,13 @@ const paths: Record<IconName, React.ReactNode> = {
     <>
       <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5.5 18 2 18 2c1.2 5.5.2 12.4-7 14" />
       <path d="M2 21c0-3 1.85-5.36 5.08-6.94C9.1 13.08 12 12 16 12" />
+    </>
+  ),
+  logout: (
+    <>
+      <path d="M10 17l5-5-5-5" />
+      <path d="M15 12H3" />
+      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
     </>
   ),
   menu: (

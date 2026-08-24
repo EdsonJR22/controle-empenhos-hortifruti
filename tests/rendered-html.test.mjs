@@ -22,5 +22,6 @@ test("build contains the commitment-control experience", async () => {
   const builtText = await readBuiltText(distPath);
   assert.match(builtText, /Controle de Empenhos Hortifruti/i);
   assert.match(builtText, /Empenhos de hortifruti/i);
+  assert.match(builtText, /Acessar sistema/i);
   assert.doesNotMatch(builtText, /Starter Project/i);
 });

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import {
   formatCurrency,
   formatQuantity,
@@ -66,7 +67,7 @@ export function NewOrderModal({
       }
       setLoading(true);
       setError("");
-      void fetch(`/api/orders/${orderId}`, {
+      void apiFetch(`/api/orders/${orderId}`, {
         cache: "no-store",
         signal: controller.signal,
       })
@@ -187,7 +188,7 @@ export function NewOrderModal({
     };
     setSaving(true);
     try {
-      const response = await fetch(
+      const response = await apiFetch(
         editing
           ? `/api/orders/${orderId}`
           : `/api/commitments/${commitment.id}/orders`,

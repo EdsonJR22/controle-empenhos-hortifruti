@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import {
   formatCurrency,
   formatDate,
@@ -34,7 +35,7 @@ export function CommitmentDetailView() {
     if (!id) return;
     setError("");
     try {
-      const response = await fetch(`/api/commitments/${id}`, { cache: "no-store" });
+      const response = await apiFetch(`/api/commitments/${id}`, { cache: "no-store" });
       const body = (await response.json()) as
         | { commitment: CommitmentDetail }
         | { error: string };
@@ -77,7 +78,7 @@ export function CommitmentDetailView() {
     if (!window.confirm(`Excluir ${reference}? O saldo da NE será recalculado.`)) return;
     setDeletingId(orderId);
     try {
-      const response = await fetch(`/api/orders/${orderId}`, { method: "DELETE" });
+      const response = await apiFetch(`/api/orders/${orderId}`, { method: "DELETE" });
       const body = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(body.error || "Não foi possível excluir o pedido.");
       await load();
@@ -102,7 +103,7 @@ export function CommitmentDetailView() {
     ) return;
     setArchiveChanging(true);
     try {
-      const response = await fetch(`/api/commitments/${commitment.id}/archive`, {
+      const response = await apiFetch(`/api/commitments/${commitment.id}/archive`, {
         method: commitment.archived ? "DELETE" : "POST",
       });
       const body = (await response.json()) as { error?: string };

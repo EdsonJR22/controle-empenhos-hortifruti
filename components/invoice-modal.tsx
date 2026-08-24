@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import {
   formatCurrency,
   formatQuantity,
@@ -61,7 +62,7 @@ export function InvoiceModal({
     const timer = window.setTimeout(() => {
       resetForm();
       setLoading(true);
-      void fetch(`/api/orders/${orderId}`, {
+      void apiFetch(`/api/orders/${orderId}`, {
         cache: "no-store",
         signal: controller.signal,
       })
@@ -183,7 +184,7 @@ export function InvoiceModal({
     };
     setSaving(true);
     try {
-      const response = await fetch(`/api/orders/${orderId}/invoice`, {
+      const response = await apiFetch(`/api/orders/${orderId}/invoice`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import { formatCurrency, formatDate } from "../lib/format";
 import type { ArchivedCommitmentsData } from "../lib/types";
 import { Icon } from "./icon";
@@ -15,7 +16,7 @@ export function ArchivedCommitments() {
   const load = useCallback(async () => {
     setError("");
     try {
-      const response = await fetch("/api/commitments/archived", { cache: "no-store" });
+      const response = await apiFetch("/api/commitments/archived", { cache: "no-store" });
       const body = (await response.json()) as ArchivedCommitmentsData | { error: string };
       if (!response.ok || !("commitments" in body)) {
         throw new Error("error" in body ? body.error : "Falha ao carregar as NEs arquivadas.");
@@ -48,7 +49,7 @@ export function ArchivedCommitments() {
   const restore = async (id: string) => {
     setRestoringId(id);
     try {
-      const response = await fetch(`/api/commitments/${id}/archive`, {
+      const response = await apiFetch(`/api/commitments/${id}/archive`, {
         method: "DELETE",
       });
       const body = (await response.json()) as { error?: string };

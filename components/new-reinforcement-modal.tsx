@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import { formatCurrency, formatQuantity, todayIso } from "../lib/format";
 import type {
   ApiErrorBody,
@@ -90,7 +91,7 @@ export function NewReinforcementModal({
 
     setSaving(true);
     try {
-      const response = await fetch(
+      const response = await apiFetch(
         `/api/commitments/${commitment.id}/reinforcements`,
         {
           method: "POST",

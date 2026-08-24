@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import { AppShell } from "../components/app-shell";
+import { AuthConfigurationError, getSessionFromToken } from "../lib/auth";
+import { AUTH_COOKIE_NAME } from "../lib/auth-core";
 import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
@@ -44,15 +47,29 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+async function getDisplayName() {
+  const cookieStore = await cookies();
+  try {
+    const session = await getSessionFromToken(
+      cookieStore.get(AUTH_COOKIE_NAME)?.value,
+    );
+    return session?.username ?? "Usuário";
+  } catch (error) {
+    if (error instanceof AuthConfigurationError) return "Usuário";
+    throw error;
+  }
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const displayName = await getDisplayName();
   return (
     <html lang="pt-BR">
       <body>
-        <AppShell displayName="Usuário">{children}</AppShell>
+        <AppShell displayName={displayName}>{children}</AppShell>
       </body>
     </html>
   );

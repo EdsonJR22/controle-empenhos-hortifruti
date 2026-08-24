@@ -15,6 +15,7 @@ notas fiscais, reforços de empenho e saldos por item.
 - reforço de empenho com histórico e atualização automática dos limites;
 - arquivamento e restauração de NEs;
 - banco persistente no Cloudflare D1;
+- acesso protegido por usuário, senha e sessão segura;
 - interface responsiva e acessível.
 
 ## Tecnologias
@@ -38,6 +39,20 @@ npm run dev
 
 O Vite mostrará o endereço local no terminal. O D1 é simulado localmente pelo
 Miniflare e os dados iniciais são carregados automaticamente no primeiro acesso.
+
+Antes de iniciar, crie um arquivo `.dev.vars` local, que já é ignorado pelo Git:
+
+```dotenv
+AUTH_USERNAME=seu-usuario
+AUTH_PASSWORD=sua-senha
+AUTH_SECRET=uma-chave-aleatoria-com-pelo-menos-32-caracteres
+```
+
+Para gerar uma chave de sessão forte:
+
+```bash
+node -e "console.log(require('node:crypto').randomBytes(48).toString('base64url'))"
+```
 
 Comandos úteis:
 
@@ -79,7 +94,24 @@ O aplicativo também verifica e cria as tabelas necessárias no primeiro acesso.
 
 ## Publicar no Cloudflare Workers
 
-Depois de autenticar o Wrangler:
+Antes do primeiro deploy da versão com login, cadastre os três valores como
+**Secrets** em **Cloudflare > Worker > Settings > Variables and Secrets**:
+
+- `AUTH_USERNAME`;
+- `AUTH_PASSWORD`;
+- `AUTH_SECRET` — chave aleatória com pelo menos 32 caracteres.
+
+Os valores também podem ser cadastrados interativamente pelo terminal. Eles não
+aparecem no comando nem são gravados no repositório:
+
+```bash
+npx wrangler secret put AUTH_USERNAME
+npx wrangler secret put AUTH_PASSWORD
+npx wrangler secret put AUTH_SECRET
+```
+
+Cada comando `wrangler secret put` cria uma nova versão no Cloudflare. Depois de
+autenticar o Wrangler e configurar os secrets:
 
 ```bash
 npm run deploy
@@ -114,9 +146,17 @@ gera uma nova implantação.
 
 ## Segurança
 
-O repositório pode ser público porque não contém o banco D1 nem credenciais.
+O repositório pode ser público porque não contém o banco D1 nem as credenciais
+de acesso. O usuário, a senha e a chave de sessão ficam armazenados como secrets
+criptografados no Cloudflare.
 Nunca envie `.env`, `.dev.vars`, tokens ou senhas para o GitHub.
 
-Se o sistema armazenar dados reais ou for usado por várias pessoas, proteja o
-Worker com Cloudflare Access. Sem autenticação, qualquer pessoa que encontrar o
-endereço poderá alterar os registros.
+O login cria uma sessão assinada de 12 horas em cookie `HttpOnly`, `Secure` em
+produção e `SameSite=Lax`. Todas as páginas e APIs exigem uma sessão válida, e o
+endpoint de login limita cada usuário a 10 tentativas por minuto em cada
+localidade da rede Cloudflare.
+Cloudflare Access ainda pode ser habilitado como uma segunda camada de proteção.
+
+Esta versão usa uma única credencial compartilhada. O logout remove a sessão do
+navegador; para invalidar todas as sessões já emitidas, troque também o valor de
+`AUTH_SECRET`.

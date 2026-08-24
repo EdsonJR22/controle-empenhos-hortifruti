@@ -4,15 +4,18 @@ import {
   updateOrder,
 } from "../../../../db/storage";
 import { apiErrorResponse } from "../../../../lib/api-response";
+import { authorizeApiRequest } from "../../../../lib/auth";
 import type { CreateOrderPayload } from "../../../../lib/types";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(
-  _request: Request,
+  request: Request,
   context: { params: Promise<{ id: string }> },
 ) {
   try {
+    const auth = await authorizeApiRequest(request);
+    if (!auth.ok) return auth.response;
     const { id } = await context.params;
     const order = await getOrderDetail(id);
     if (!order) {
@@ -31,6 +34,8 @@ export async function PUT(
   context: { params: Promise<{ id: string }> },
 ) {
   try {
+    const auth = await authorizeApiRequest(request);
+    if (!auth.ok) return auth.response;
     const { id } = await context.params;
     const payload = (await request.json()) as CreateOrderPayload;
     const order = await updateOrder(id, payload);
@@ -41,10 +46,12 @@ export async function PUT(
 }
 
 export async function DELETE(
-  _request: Request,
+  request: Request,
   context: { params: Promise<{ id: string }> },
 ) {
   try {
+    const auth = await authorizeApiRequest(request);
+    if (!auth.ok) return auth.response;
     const { id } = await context.params;
     const order = await deleteOrder(id);
     return Response.json({ order });

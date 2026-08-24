@@ -3,7 +3,7 @@ import {
   unarchiveCommitment,
 } from "../../../../../db/storage";
 import { apiErrorResponse } from "../../../../../lib/api-response";
-import { requestUserLabel } from "../../../../../lib/request-user";
+import { authorizeApiRequest } from "../../../../../lib/auth";
 
 export const dynamic = "force-dynamic";
 
@@ -12,8 +12,10 @@ export async function POST(
   context: { params: Promise<{ id: string }> },
 ) {
   try {
+    const auth = await authorizeApiRequest(request);
+    if (!auth.ok) return auth.response;
     const { id } = await context.params;
-    const commitment = await archiveCommitment(id, requestUserLabel(request));
+    const commitment = await archiveCommitment(id, auth.username);
     return Response.json({ commitment });
   } catch (error) {
     return apiErrorResponse(error);
@@ -21,10 +23,12 @@ export async function POST(
 }
 
 export async function DELETE(
-  _request: Request,
+  request: Request,
   context: { params: Promise<{ id: string }> },
 ) {
   try {
+    const auth = await authorizeApiRequest(request);
+    if (!auth.ok) return auth.response;
     const { id } = await context.params;
     const commitment = await unarchiveCommitment(id);
     return Response.json({ commitment });

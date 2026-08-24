@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { apiFetch } from "../lib/client-api";
 import { formatCurrency, formatDate } from "../lib/format";
 import type { DashboardData } from "../lib/types";
 import { Icon } from "./icon";
@@ -21,7 +22,7 @@ export function Dashboard() {
   const load = useCallback(async () => {
     setError("");
     try {
-      const response = await fetch("/api/dashboard", { cache: "no-store" });
+      const response = await apiFetch("/api/dashboard", { cache: "no-store" });
       const body = (await response.json()) as DashboardData | { error: string };
       if (!response.ok || !("commitments" in body)) {
         throw new Error("error" in body ? body.error : "Falha ao carregar os dados.");

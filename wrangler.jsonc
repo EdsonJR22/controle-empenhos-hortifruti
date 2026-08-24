@@ -17,6 +17,19 @@
       "migrations_dir": "drizzle"
     }
   ],
+  "secrets": {
+    "required": ["AUTH_USERNAME", "AUTH_PASSWORD", "AUTH_SECRET"]
+  },
+  "ratelimits": [
+    {
+      "name": "LOGIN_RATE_LIMITER",
+      "namespace_id": "1562575727",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ],
   "observability": {
     "enabled": true
   }
