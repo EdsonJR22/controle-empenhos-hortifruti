@@ -135,7 +135,7 @@ svg {
   place-items: center;
   border-radius: 12px;
   color: var(--forest-950);
-  background: var(--lime-500);
+  background: var(--lime-300);
   box-shadow: 0 8px 20px rgb(183 220 72 / 18%);
 }
 
@@ -357,9 +357,14 @@ svg {
   place-items: center;
   border-radius: 13px;
   color: var(--forest-950);
-  background: var(--lime-500);
+  background: var(--lime-300);
   font-size: 16px;
   font-weight: 850;
+}
+
+.login-brand-mark img {
+  width: 34px;
+  height: auto;
 }
 
 .login-heading {
@@ -597,7 +602,7 @@ svg {
 
 .summary-dark .summary-icon {
   color: var(--forest-950);
-  background: var(--lime-500);
+  background: var(--lime-300);
 }
 
 .summary-dark span:not(.summary-icon),
@@ -618,6 +623,7 @@ svg {
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  overflow: hidden;
 }
 
 .content-card-header {

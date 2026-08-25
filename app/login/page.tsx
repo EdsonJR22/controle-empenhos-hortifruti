@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { sanitizeReturnPath } from "../../lib/auth-core";
 
 export const metadata: Metadata = {
@@ -28,7 +29,9 @@ export default async function LoginPage({
     <div className="login-page">
       <section className="login-card" aria-labelledby="login-title">
         <div className="login-brand">
-          <span className="login-brand-mark" aria-hidden="true">H</span>
+          <span className="login-brand-mark" aria-hidden="true">
+            <Image src="/simbolo-intendencia.svg" alt="" width={34} height={18} priority />
+          </span>
           <span>
             <strong>HortiControl</strong>
             <small>Gestão de empenhos</small>
