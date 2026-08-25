@@ -77,6 +77,9 @@ export type OrderItemDetail = {
 export type OrderDetail = {
   id: string;
   commitmentId: string;
+  commitmentNumber: string;
+  supplier: string;
+  commitmentIssueDate: string;
   reference: string;
   orderDate: string;
   status: OrderStatus;

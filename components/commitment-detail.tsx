@@ -373,18 +373,38 @@ export function CommitmentDetailView() {
                 )}
                 {order.notes && <p className="order-note"><strong>Pedido:</strong> {order.notes}</p>}
                 {order.invoice?.notes && <p className="order-note"><strong>NF:</strong> {order.invoice.notes}</p>}
-                {!commitment.archived && (
-                  <div className="order-card-actions">
-                    {!order.invoice && (
-                      <button className="button button-small button-ghost" type="button" onClick={() => setEditingOrderId(order.id)}>
-                        <Icon name="edit" /> Editar pedido
+                <div className="order-card-actions">
+                  <Link
+                    className="button button-small button-ghost"
+                    href={`/documentos/pedidos/${order.id}?print=1`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon name="file" /> Pedido em PDF
+                  </Link>
+                  {order.invoice && (
+                    <Link
+                      className="button button-small button-ghost"
+                      href={`/documentos/notas-fiscais/${order.id}?print=1`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Icon name="receipt" /> Espelho da NF em PDF
+                    </Link>
+                  )}
+                  {!commitment.archived && (
+                    <>
+                      {!order.invoice && (
+                        <button className="button button-small button-ghost" type="button" onClick={() => setEditingOrderId(order.id)}>
+                          <Icon name="edit" /> Editar pedido
+                        </button>
+                      )}
+                      <button className="button button-small button-secondary" type="button" onClick={() => setInvoiceOrderId(order.id)}>
+                        <Icon name="receipt" /> {order.invoice ? "Editar NF" : "Transformar em NF"}
                       </button>
-                    )}
-                    <button className="button button-small button-secondary" type="button" onClick={() => setInvoiceOrderId(order.id)}>
-                      <Icon name="receipt" /> {order.invoice ? "Editar NF" : "Transformar em NF"}
-                    </button>
-                  </div>
-                )}
+                    </>
+                  )}
+                </div>
               </article>
             ))}
           </div>

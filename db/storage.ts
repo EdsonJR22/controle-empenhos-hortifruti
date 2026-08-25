@@ -755,6 +755,9 @@ export async function getOrderDetail(id: string): Promise<OrderDetail | null> {
     .prepare(`SELECT
       o.id,
       o.commitment_id,
+      c.number AS commitment_number,
+      c.supplier,
+      c.issue_date AS commitment_issue_date,
       o.reference,
       o.order_date,
       o.notes,
@@ -768,6 +771,7 @@ export async function getOrderDetail(id: string): Promise<OrderDetail | null> {
       i.total_cents AS invoice_total_cents,
       i.created_by AS invoice_created_by
     FROM orders o
+    JOIN commitments c ON c.id = o.commitment_id
     LEFT JOIN invoices i ON i.order_id = o.id
     WHERE o.id = ?`)
     .bind(id)
@@ -825,6 +829,9 @@ export async function getOrderDetail(id: string): Promise<OrderDetail | null> {
   return {
     id: String(order.id),
     commitmentId: String(order.commitment_id),
+    commitmentNumber: String(order.commitment_number),
+    supplier: String(order.supplier),
+    commitmentIssueDate: String(order.commitment_issue_date),
     reference: String(order.reference),
     orderDate: String(order.order_date),
     status: invoice ? "faturado" : "rascunho",
