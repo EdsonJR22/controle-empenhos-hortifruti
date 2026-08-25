@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     ...(siteUrl ? { images: [`${siteUrl}/og.png`] } : {}),
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/simbolo-intendencia.svg",
+    shortcut: "/simbolo-intendencia.svg",
   },
 };
 

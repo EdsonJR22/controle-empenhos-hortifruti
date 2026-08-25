@@ -299,17 +299,33 @@ svg {
   display: none;
 }
 
+.app-content {
+  display: flex;
+  min-width: 0;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .app-main {
+  flex: 1;
   min-width: 0;
   padding: 44px clamp(26px, 3.2vw, 58px) 64px;
 }
 
-.login-main {
+.login-shell {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-main {
+  display: flex;
+  flex: 1;
 }
 
 .login-page {
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   display: grid;
   place-items: center;
   padding: 32px 20px;
@@ -317,6 +333,32 @@ svg {
     radial-gradient(circle at 15% 18%, rgb(183 220 72 / 18%), transparent 34%),
     radial-gradient(circle at 85% 80%, rgb(220 235 227 / 35%), transparent 38%),
     var(--canvas);
+}
+
+.app-footer {
+  padding: 15px clamp(20px, 3vw, 44px) 18px;
+  border-top: 1px solid rgb(213 223 216 / 65%);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.app-footer a {
+  color: inherit;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+
+.app-footer a:hover {
+  color: var(--forest-700);
+  text-decoration: underline;
+}
+
+.app-footer a:focus-visible {
+  border-radius: 4px;
+  outline: 2px solid var(--forest-700);
+  outline-offset: 3px;
 }
 
 .login-card {

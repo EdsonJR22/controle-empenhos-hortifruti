@@ -7,6 +7,20 @@ import { useState } from "react";
 import { initials } from "../lib/format";
 import { Icon } from "./icon";
 
+function AppFooter() {
+  return (
+    <footer className="app-footer">
+      <a
+        href="https://www.instagram.com/edson_dev_/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Projeto desenvolvido e mantido por: 3º SGT MACHADO
+      </a>
+    </footer>
+  );
+}
+
 export function AppShell({
   children,
   displayName,
@@ -19,7 +33,12 @@ export function AppShell({
   const inArchived = pathname.startsWith("/arquivadas");
 
   if (pathname === "/login" || pathname === "/login/") {
-    return <main className="login-main">{children}</main>;
+    return (
+      <div className="login-shell">
+        <main className="login-main">{children}</main>
+        <AppFooter />
+      </div>
+    );
   }
 
   return (
@@ -93,7 +112,10 @@ export function AppShell({
           onClick={() => setMobileOpen(false)}
         />
       )}
-      <main className="app-main">{children}</main>
+      <div className="app-content">
+        <main className="app-main">{children}</main>
+        <AppFooter />
+      </div>
     </div>
   );
 }
