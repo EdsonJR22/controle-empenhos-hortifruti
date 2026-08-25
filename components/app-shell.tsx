@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { initials } from "../lib/format";
@@ -34,7 +35,9 @@ export function AppShell({
       </button>
       <aside className={`sidebar ${mobileOpen ? "sidebar-open" : ""}`}>
         <Link className="brand" href="/" onClick={() => setMobileOpen(false)}>
-          <span className="brand-mark"><Icon name="leaf" /></span>
+          <span className="brand-mark" aria-hidden="true">
+            <Image src="/simbolo-intendencia.svg" alt="" width={32} height={18} priority />
+          </span>
           <span>
             <strong>HortiControl</strong>
             <small>Gestão de empenhos</small>

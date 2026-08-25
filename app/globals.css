@@ -139,9 +139,9 @@ svg {
   box-shadow: 0 8px 20px rgb(183 220 72 / 18%);
 }
 
-.brand-mark svg {
-  width: 22px;
-  height: 22px;
+.brand-mark img {
+  width: 32px;
+  height: auto;
 }
 
 .brand > span:last-child,
