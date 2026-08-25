@@ -9,8 +9,6 @@ import { formatCurrency, formatDate, formatQuantity } from "../lib/format";
 import type { OrderDetail, OrderItemDetail } from "../lib/types";
 import { Icon } from "./icon";
 
-export type OrderDocumentMode = "order" | "invoice";
-
 function formatGeneratedAt(value: Date) {
   return new Intl.DateTimeFormat("pt-BR", {
     dateStyle: "short",
@@ -26,7 +24,7 @@ function safeDocumentTitle(value: string) {
   return value.replace(/[\\/:*?"<>|]/g, "-").replace(/\s+/g, " ").trim();
 }
 
-export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
+export function OrderDocumentView() {
   const params = useParams<{ id: string }>();
   const id = Array.isArray(params.id) ? params.id[0] : params.id;
   const [order, setOrder] = useState<OrderDetail | null>(null);
@@ -51,9 +49,6 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
             "error" in body ? body.error : "Não foi possível carregar o documento.",
           );
         }
-        if (mode === "invoice" && !body.order.invoice) {
-          throw new Error("Este pedido ainda não possui uma nota fiscal registrada.");
-        }
         setOrder(body.order);
       })
       .catch((requestError: unknown) => {
@@ -66,20 +61,17 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
       });
 
     return () => controller.abort();
-  }, [id, mode]);
+  }, [id]);
 
   useEffect(() => {
     if (!order) return;
     const previousTitle = document.title;
-    const nextTitle =
-      mode === "invoice" && order.invoice
-        ? `Espelho NF ${order.invoice.number} - NE ${order.commitmentNumber}`
-        : `Pedido ${order.reference} - NE ${order.commitmentNumber}`;
+    const nextTitle = `Pedido ${order.reference} - NE ${order.commitmentNumber}`;
     document.title = safeDocumentTitle(nextTitle);
     return () => {
       document.title = previousTitle;
     };
-  }, [mode, order]);
+  }, [order]);
 
   useEffect(() => {
     if (!order || printTriggered.current) return;
@@ -117,15 +109,9 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
     );
   }
 
-  const invoice = order.invoice;
-  const isInvoice = mode === "invoice" && Boolean(invoice);
-  const items = isInvoice ? invoice!.items : order.items;
-  const documentDate = isInvoice ? invoice!.invoiceDate : order.orderDate;
-  const calculatedTotalCents = isInvoice
-    ? invoice!.calculatedTotalCents
-    : order.calculatedTotalCents;
-  const totalCents = isInvoice ? invoice!.totalCents : order.requestedTotalCents;
-  const notes = isInvoice ? invoice!.notes : order.notes;
+  const items = order.items;
+  const calculatedTotalCents = order.calculatedTotalCents;
+  const totalCents = order.requestedTotalCents;
   const hasAdjustment = Math.abs(totalCents - calculatedTotalCents) > 1;
 
   return (
@@ -135,7 +121,7 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
           <Icon name="arrow-left" /> Voltar para a NE
         </Link>
         <div>
-          <strong>{isInvoice ? "Espelho da NF pronto" : "Pedido pronto"}</strong>
+          <strong>Pedido pronto</strong>
           <span>Na janela de impressão, escolha “Salvar como PDF”.</span>
         </div>
         <button className="button button-primary" type="button" onClick={() => window.print()}>
@@ -161,8 +147,8 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
             </div>
           </div>
           <div className="document-heading">
-            <span>{isInvoice ? "Espelho de nota fiscal" : "Pedido de fornecimento"}</span>
-            <h1>{isInvoice ? `NF ${invoice!.number}` : order.reference}</h1>
+            <span>Pedido de fornecimento</span>
+            <h1>{order.reference}</h1>
           </div>
         </header>
 
@@ -179,43 +165,20 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
             <span>Emissão da NE</span>
             <strong>{formatDate(order.commitmentIssueDate)}</strong>
           </div>
-          {isInvoice ? (
-            <>
-              <div>
-                <span>Pedido de origem</span>
-                <strong>{order.reference}</strong>
-              </div>
-              <div>
-                <span>Data do pedido</span>
-                <strong>{formatDate(order.orderDate)}</strong>
-              </div>
-              <div>
-                <span>Número da NF</span>
-                <strong>{invoice!.number}</strong>
-              </div>
-              <div>
-                <span>Data da NF</span>
-                <strong>{formatDate(documentDate)}</strong>
-              </div>
-            </>
-          ) : (
-            <>
-              <div>
-                <span>Referência do pedido</span>
-                <strong>{order.reference}</strong>
-              </div>
-              <div>
-                <span>Data do pedido</span>
-                <strong>{formatDate(documentDate)}</strong>
-              </div>
-            </>
-          )}
+          <div>
+            <span>Referência do pedido</span>
+            <strong>{order.reference}</strong>
+          </div>
+          <div>
+            <span>Data do pedido</span>
+            <strong>{formatDate(order.orderDate)}</strong>
+          </div>
         </section>
 
         <section className="document-items" aria-labelledby="document-items-title">
           <div className="document-section-heading">
             <div>
-              <span>{isInvoice ? "Itens entregues" : "Itens solicitados"}</span>
+              <span>Itens solicitados</span>
               <h2 id="document-items-title">
                 {items.length} {items.length === 1 ? "item" : "itens"}
               </h2>
@@ -250,18 +213,6 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
         </section>
 
         <section className="document-summary" aria-label="Totais do documento">
-          {isInvoice && (
-            <>
-              <div>
-                <span>Valor do pedido original</span>
-                <strong>{formatCurrency(order.requestedTotalCents)}</strong>
-              </div>
-              <div>
-                <span>Diferença para o pedido</span>
-                <strong>{formatCurrency(totalCents - order.requestedTotalCents)}</strong>
-              </div>
-            </>
-          )}
           {hasAdjustment && (
             <div>
               <span>Soma dos itens</span>
@@ -274,18 +225,11 @@ export function OrderDocumentView({ mode }: { mode: OrderDocumentMode }) {
           </div>
         </section>
 
-        {notes && (
+        {order.notes && (
           <section className="document-notes">
             <span>Observações</span>
-            <p>{notes}</p>
+            <p>{order.notes}</p>
           </section>
-        )}
-
-        {isInvoice && (
-          <p className="document-disclaimer">
-            Este documento é um espelho para conferência e controle administrativo. Ele não
-            substitui a NF-e, o XML ou o DANFE emitidos pelo fornecedor.
-          </p>
         )}
 
         <footer className="document-footer">

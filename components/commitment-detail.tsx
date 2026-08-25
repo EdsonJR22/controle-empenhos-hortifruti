@@ -382,16 +382,6 @@ export function CommitmentDetailView() {
                   >
                     <Icon name="file" /> Pedido em PDF
                   </Link>
-                  {order.invoice && (
-                    <Link
-                      className="button button-small button-ghost"
-                      href={`/documentos/notas-fiscais/${order.id}?print=1`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon name="receipt" /> Espelho da NF em PDF
-                    </Link>
-                  )}
                   {!commitment.archived && (
                     <>
                       {!order.invoice && (

@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function PrintableOrderPage() {
-  return <OrderDocumentView mode="order" />;
+  return <OrderDocumentView />;
 }
