@@ -15,7 +15,6 @@ export function AppShell({
 }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const inCommitment = pathname.startsWith("/empenhos/");
   const inArchived = pathname.startsWith("/arquivadas");
 
   if (pathname === "/login" || pathname === "/login/") {
@@ -51,14 +50,6 @@ export function AppShell({
           >
             <Icon name="dashboard" />
             Visão geral
-          </Link>
-          <Link
-            className={inCommitment ? "nav-link active" : "nav-link"}
-            href="/#empenhos"
-            onClick={() => setMobileOpen(false)}
-          >
-            <Icon name="file" />
-            Empenhos
           </Link>
           <Link
             className={inArchived ? "nav-link active" : "nav-link"}
