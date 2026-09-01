@@ -98,6 +98,17 @@ export type ReinforcementSummary = {
   totalCents: number;
   itemCount: number;
   createdBy: string;
+  items: ReinforcementItemDetail[];
+};
+
+export type ReinforcementItemDetail = {
+  commitmentItemId: string;
+  lineNumber: number;
+  description: string;
+  unit: string;
+  addedQuantity: number;
+  unitPriceCents: number;
+  addedTotalCents: number;
 };
 
 export type CommitmentDetail = {

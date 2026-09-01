@@ -27,5 +27,7 @@ test("build contains the commitment-control experience", async () => {
   assert.match(builtText, /https:\/\/www\.instagram\.com\/edson_dev_\//i);
   assert.match(builtText, /Pedido de fornecimento/i);
   assert.match(builtText, /Salvar como PDF/i);
+  assert.match(builtText, /Itens reforçados/i);
+  assert.match(builtText, /Quantidade reforçada/i);
   assert.doesNotMatch(builtText, /Starter Project/i);
 });

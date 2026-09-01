@@ -2069,13 +2069,23 @@ textarea::placeholder {
 
 .reinforcement-history-item {
   display: grid;
+  width: 100%;
   grid-template-columns: 34px minmax(0, 1fr) auto;
   gap: 11px;
   align-items: center;
   padding: 13px;
   border: 1px solid var(--line);
   border-radius: 12px;
+  appearance: none;
   background: #fafcf9;
+  text-align: left;
+  transition: border-color 120ms ease, background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.reinforcement-history-item:hover {
+  border-color: var(--forest-700);
+  background: var(--forest-50);
+  box-shadow: var(--shadow-sm);
 }
 
 .reinforcement-history-icon {
@@ -2093,13 +2103,13 @@ textarea::placeholder {
   height: 17px;
 }
 
-.reinforcement-history-item > div {
+.reinforcement-history-content {
   display: flex;
   min-width: 0;
   flex-direction: column;
 }
 
-.reinforcement-history-item > div > strong {
+.reinforcement-history-content > strong {
   color: var(--forest-950);
   font-size: 12px;
 }
@@ -2118,6 +2128,96 @@ textarea::placeholder {
   color: var(--success);
   font-size: 13px;
   white-space: nowrap;
+}
+
+.reinforcement-history-action {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.reinforcement-history-action svg {
+  width: 16px;
+  height: 16px;
+  color: var(--forest-700);
+}
+
+.reinforcement-detail-notes {
+  padding: 13px 15px;
+  border: 1px solid #d5e2d7;
+  border-radius: 12px;
+  background: #f5f9f5;
+}
+
+.reinforcement-detail-notes > span {
+  color: var(--forest-700);
+  font-size: 9px;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reinforcement-detail-notes p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  white-space: pre-wrap;
+}
+
+.reinforcement-detail-list {
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.reinforcement-detail-head,
+.reinforcement-detail-row {
+  display: grid;
+  grid-template-columns: minmax(190px, 1.6fr) 72px 145px 110px 110px;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.reinforcement-detail-head {
+  color: var(--muted-2);
+  background: var(--surface-soft);
+  font-size: 9px;
+  font-weight: 760;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.reinforcement-detail-head span:nth-child(n + 2) {
+  text-align: right;
+}
+
+.reinforcement-detail-row {
+  border-top: 1px solid var(--line);
+  background: white;
+}
+
+.reinforcement-detail-row > div:not(.product-cell) {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.reinforcement-detail-row > div > strong {
+  color: var(--forest-950);
+  font-size: 11px;
+}
+
+.reinforcement-detail-row .reinforcement-detail-quantity strong,
+.reinforcement-detail-row .reinforcement-detail-total strong {
+  color: var(--success);
+}
+
+.reinforcement-detail-label {
+  display: none;
 }
 
 .archived-banner,
@@ -2944,6 +3044,44 @@ textarea::placeholder {
     grid-template-columns: 1fr;
   }
 
+  .reinforcement-detail-head {
+    display: none;
+  }
+
+  .reinforcement-detail-list {
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .reinforcement-detail-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 13px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+
+  .reinforcement-detail-row .product-cell {
+    grid-column: 1 / -1;
+  }
+
+  .reinforcement-detail-row > div:not(.product-cell) {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .reinforcement-detail-label {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--muted-2);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
   .order-summary-strip > div:nth-child(2) {
     border-right: 0;
   }
@@ -3106,8 +3244,9 @@ textarea::placeholder {
     grid-template-columns: 34px minmax(0, 1fr);
   }
 
-  .reinforcement-history-value {
+  .reinforcement-history-action {
     grid-column: 2;
+    justify-content: space-between;
   }
 
   .order-summary-strip > div,

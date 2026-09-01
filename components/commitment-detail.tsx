@@ -14,6 +14,7 @@ import { Icon } from "./icon";
 import { InvoiceModal } from "./invoice-modal";
 import { NewOrderModal } from "./new-order-modal";
 import { NewReinforcementModal } from "./new-reinforcement-modal";
+import { ReinforcementDetailModal } from "./reinforcement-detail-modal";
 
 type ItemFilter = "todos" | "alertas" | "disponiveis" | "esgotados";
 
@@ -28,8 +29,14 @@ export function CommitmentDetailView() {
   const [editingOrderId, setEditingOrderId] = useState<string | null>(null);
   const [invoiceOrderId, setInvoiceOrderId] = useState<string | null>(null);
   const [reinforcementOpen, setReinforcementOpen] = useState(false);
+  const [selectedReinforcementId, setSelectedReinforcementId] = useState<string | null>(null);
   const [deletingId, setDeletingId] = useState<string | null>(null);
   const [archiveChanging, setArchiveChanging] = useState(false);
+
+  const selectedReinforcement =
+    commitment?.reinforcements.find(
+      (reinforcement) => reinforcement.id === selectedReinforcementId,
+    ) ?? null;
 
   const load = useCallback(async () => {
     if (!id) return;
@@ -418,15 +425,25 @@ export function CommitmentDetailView() {
           </div>
           <div className="reinforcement-history-list">
             {commitment.reinforcements.map((reinforcement) => (
-              <article className="reinforcement-history-item" key={reinforcement.id}>
+              <button
+                aria-haspopup="dialog"
+                aria-label={`Ver itens do reforço ${reinforcement.reference}`}
+                className="reinforcement-history-item"
+                key={reinforcement.id}
+                type="button"
+                onClick={() => setSelectedReinforcementId(reinforcement.id)}
+              >
                 <span className="reinforcement-history-icon"><Icon name="plus" /></span>
-                <div>
+                <span className="reinforcement-history-content">
                   <strong>{reinforcement.reference}</strong>
                   <small>{formatDate(reinforcement.reinforcementDate)} · {reinforcement.itemCount} item(ns)</small>
                   {reinforcement.notes && <p>{reinforcement.notes}</p>}
-                </div>
-                <strong className="reinforcement-history-value">+ {formatCurrency(reinforcement.totalCents)}</strong>
-              </article>
+                </span>
+                <span className="reinforcement-history-action">
+                  <strong className="reinforcement-history-value">+ {formatCurrency(reinforcement.totalCents)}</strong>
+                  <Icon name="chevron-right" />
+                </span>
+              </button>
             ))}
           </div>
         </section>
@@ -464,6 +481,11 @@ export function CommitmentDetailView() {
           setReinforcementOpen(false);
           void load();
         }}
+      />
+      <ReinforcementDetailModal
+        reinforcement={selectedReinforcement}
+        commitmentNumber={commitment.number}
+        onClose={() => setSelectedReinforcementId(null)}
       />
     </div>
   );

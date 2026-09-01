@@ -12,6 +12,7 @@ import type {
   DashboardData,
   OrderDetail,
   OrderStatus,
+  ReinforcementItemDetail,
 } from "../lib/types";
 
 type SeedCommitment = {
@@ -511,7 +512,12 @@ export async function getCommitmentDetail(
     .first<DataRow>();
   if (!commitment) return null;
 
-  const [itemResult, orderResult, reinforcementResult] = await Promise.all([
+  const [
+    itemResult,
+    orderResult,
+    reinforcementResult,
+    reinforcementItemResult,
+  ] = await Promise.all([
     db
       .prepare(`SELECT
         ci.id,
@@ -580,6 +586,23 @@ export async function getCommitmentDetail(
       ORDER BY r.reinforcement_date DESC, r.created_at DESC`)
       .bind(id)
       .all<DataRow>(),
+    db
+      .prepare(`SELECT
+        ri.reinforcement_id,
+        ri.commitment_item_id,
+        ci.line_number,
+        ci.description,
+        ci.unit,
+        ri.added_quantity,
+        ri.unit_price_cents,
+        ri.added_total_cents
+      FROM commitment_reinforcement_items ri
+      JOIN commitment_reinforcements r ON r.id = ri.reinforcement_id
+      JOIN commitment_items ci ON ci.id = ri.commitment_item_id
+      WHERE r.commitment_id = ?
+      ORDER BY r.reinforcement_date DESC, r.created_at DESC, ci.line_number ASC`)
+      .bind(id)
+      .all<DataRow>(),
   ]);
 
   const items = itemResult.results.map((row) => {
@@ -607,6 +630,22 @@ export async function getCommitmentDetail(
 
   const totalCents = asNumber(commitment.total_cents);
   const orderedCents = asNumber(commitment.ordered_cents);
+  const reinforcementItemsById = new Map<string, ReinforcementItemDetail[]>();
+  for (const row of reinforcementItemResult.results) {
+    const reinforcementId = String(row.reinforcement_id);
+    const reinforcementItems = reinforcementItemsById.get(reinforcementId) ?? [];
+    reinforcementItems.push({
+      commitmentItemId: String(row.commitment_item_id),
+      lineNumber: asNumber(row.line_number),
+      description: String(row.description),
+      unit: String(row.unit),
+      addedQuantity: asNumber(row.added_quantity),
+      unitPriceCents: asNumber(row.unit_price_cents),
+      addedTotalCents: asNumber(row.added_total_cents),
+    });
+    reinforcementItemsById.set(reinforcementId, reinforcementItems);
+  }
+
   return {
     id: String(commitment.id),
     number: String(commitment.number),
@@ -671,6 +710,7 @@ export async function getCommitmentDetail(
       totalCents: asNumber(row.total_cents),
       itemCount: asNumber(row.item_count),
       createdBy: String(row.created_by ?? ""),
+      items: reinforcementItemsById.get(String(row.id)) ?? [],
     })),
   };
 }
