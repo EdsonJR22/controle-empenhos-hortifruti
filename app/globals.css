@@ -1252,6 +1252,39 @@ textarea::placeholder {
   background: white;
 }
 
+.data-table tr.row-empty td {
+  border-bottom-color: #e4c983;
+  color: #67450a;
+  background: #fff6df;
+}
+
+.data-table tr.row-empty:hover td {
+  background: #ffedc2;
+}
+
+.data-table tr.row-empty td:first-child {
+  box-shadow: inset 4px 0 #996300;
+}
+
+.data-table tr.row-empty .table-product strong {
+  color: #67450a;
+}
+
+.data-table tr.row-empty .item-number {
+  color: white;
+  background: #996300;
+}
+
+.data-table tr.row-empty td small {
+  color: #715a30;
+}
+
+.data-table tr.row-empty .quantity-pill.neutral {
+  border: 1px solid #996300;
+  color: var(--warning);
+  background: white;
+}
+
 .data-table td small {
   color: var(--muted-2);
 }
@@ -1286,7 +1319,8 @@ textarea::placeholder {
   font-size: 10px;
 }
 
-.row-limit-label {
+.row-limit-label,
+.row-empty-label {
   display: inline-flex;
   width: fit-content;
   align-items: center;
@@ -1295,13 +1329,21 @@ textarea::placeholder {
   padding: 3px 6px;
   border-radius: 999px;
   color: white;
-  background: #9b2424;
   font-size: 9px;
   font-weight: 780;
   line-height: 1;
 }
 
-.row-limit-label svg {
+.row-limit-label {
+  background: #9b2424;
+}
+
+.row-empty-label {
+  background: #996300;
+}
+
+.row-limit-label svg,
+.row-empty-label svg {
   width: 11px;
   height: 11px;
 }
@@ -1822,6 +1864,47 @@ textarea::placeholder {
 
 .order-item-row.selected {
   background: #f7fbf6;
+}
+
+.order-item-row.balance-negative {
+  border-top-color: #e4aaa4;
+  background: var(--danger-soft);
+  box-shadow: inset 4px 0 var(--danger);
+}
+
+.order-item-row.balance-negative .product-cell strong {
+  color: #6f1d1d;
+}
+
+.order-item-row.balance-negative .product-cell small,
+.order-item-row.balance-negative > div:nth-child(2) small {
+  color: #713b36;
+}
+
+.order-item-row.balance-negative .item-number {
+  color: white;
+  background: var(--danger);
+}
+
+.order-item-row.balance-empty {
+  border-top-color: #e4c983;
+  background: #fff6df;
+  box-shadow: inset 4px 0 #996300;
+}
+
+.order-item-row.balance-empty .product-cell strong,
+.order-item-row .empty-balance {
+  color: #67450a;
+}
+
+.order-item-row.balance-empty .product-cell small,
+.order-item-row.balance-empty > div:nth-child(2) small {
+  color: #715a30;
+}
+
+.order-item-row.balance-empty .item-number {
+  color: white;
+  background: #996300;
 }
 
 .order-item-row > div:nth-child(2) {

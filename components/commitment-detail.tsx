@@ -67,8 +67,8 @@ export function CommitmentDetailView() {
         String(item.lineNumber).includes(normalized);
       const matchesFilter =
         filter === "todos" ||
-        (filter === "alertas" && item.balanceQuantity < 0) ||
-        (filter === "disponiveis" && item.balanceQuantity > 0) ||
+        (filter === "alertas" && item.balanceQuantity < -0.000001) ||
+        (filter === "disponiveis" && item.balanceQuantity > 0.000001) ||
         (filter === "esgotados" && Math.abs(item.balanceQuantity) < 0.000001);
       return matchesSearch && matchesFilter;
     });
@@ -280,7 +280,7 @@ export function CommitmentDetailView() {
                   const negative = item.balanceQuantity < -0.000001;
                   const empty = Math.abs(item.balanceQuantity) < 0.000001;
                   return (
-                    <tr className={negative ? "row-negative" : ""} key={item.id}>
+                    <tr className={negative ? "row-negative" : empty ? "row-empty" : ""} key={item.id}>
                       <td>
                         <div className="table-product">
                           <span className="item-number">{item.lineNumber}</span>
@@ -290,6 +290,11 @@ export function CommitmentDetailView() {
                             {negative && (
                               <span className="row-limit-label">
                                 <Icon name="alert" /> Limite extrapolado
+                              </span>
+                            )}
+                            {empty && (
+                              <span className="row-empty-label">
+                                <Icon name="alert" /> Saldo zerado
                               </span>
                             )}
                           </span>

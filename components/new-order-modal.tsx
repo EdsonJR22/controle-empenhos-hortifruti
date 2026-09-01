@@ -316,14 +316,33 @@ export function NewOrderModal({
                     : item.unitPriceCents / 100;
                   const availableQuantity =
                     item.balanceQuantity + (originalQuantities[item.id] ?? 0);
-                  const willExceedItem = quantity > availableQuantity + 0.000001;
+                  const negativeBalance = availableQuantity < -0.000001;
+                  const emptyBalance = Math.abs(availableQuantity) < 0.000001;
+                  const willExceedItem =
+                    quantity > 0.000001 && quantity > availableQuantity + 0.000001;
                   return (
-                    <div className={`order-item-row ${quantity > 0 ? "selected" : ""}`} key={item.id}>
+                    <div
+                      className={`order-item-row ${quantity > 0 ? "selected" : ""} ${negativeBalance ? "balance-negative" : emptyBalance ? "balance-empty" : ""}`}
+                      key={item.id}
+                    >
                       <div className="product-cell">
                         <span className="item-number">{item.lineNumber}</span>
-                        <span><strong>{item.description}</strong><small>{item.unit}</small></span>
+                        <span>
+                          <strong>{item.description}</strong>
+                          <small>{item.unit}</small>
+                          {negativeBalance && (
+                            <span className="row-limit-label">
+                              <Icon name="alert" /> Limite extrapolado
+                            </span>
+                          )}
+                          {emptyBalance && (
+                            <span className="row-empty-label">
+                              <Icon name="alert" /> Saldo zerado
+                            </span>
+                          )}
+                        </span>
                       </div>
-                      <div className={availableQuantity < 0 ? "negative" : ""}>
+                      <div className={negativeBalance ? "negative" : emptyBalance ? "empty-balance" : ""}>
                         <strong>{formatQuantity(availableQuantity)}</strong><small>{item.unit} disponíveis</small>
                       </div>
                       <label>
