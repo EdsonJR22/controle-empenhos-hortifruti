@@ -33,7 +33,7 @@ export default async function LoginPage({
             <Image src="/simbolo-intendencia.svg" alt="" width={34} height={18} priority />
           </span>
           <span>
-            <strong>HortiControl</strong>
+            <strong>EmpControl</strong>
             <small>Gestão de empenhos</small>
           </span>
         </div>

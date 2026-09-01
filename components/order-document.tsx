@@ -142,7 +142,7 @@ export function OrderDocumentView() {
               />
             </span>
             <div>
-              <strong>HortiControl</strong>
+              <strong>EmpControl</strong>
               <span>Controle de Notas de Empenho</span>
             </div>
           </div>
@@ -234,7 +234,7 @@ export function OrderDocumentView() {
 
         <footer className="document-footer">
           <span>Gerado em {formatGeneratedAt(generatedAt)}</span>
-          <span>HortiControl · NE {order.commitmentNumber}</span>
+          <span>EmpControl · NE {order.commitmentNumber}</span>
         </footer>
       </article>
     </div>

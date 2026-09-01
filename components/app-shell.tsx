@@ -58,7 +58,7 @@ export function AppShell({
             <Image src="/simbolo-intendencia.svg" alt="" width={32} height={18} priority />
           </span>
           <span>
-            <strong>HortiControl</strong>
+            <strong>EmpControl</strong>
             <small>Gestão de empenhos</small>
           </span>
         </Link>

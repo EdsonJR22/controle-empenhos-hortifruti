@@ -10,8 +10,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   title: {
-    default: "Controle de Empenhos Hortifruti",
-    template: "%s · HortiControl",
+    default: "EmpControl · Controle de Empenhos",
+    template: "%s · EmpControl",
   },
   description:
     "Controle de notas de empenho, pedidos, quantidades e saldos de hortifruti.",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     ...(siteUrl ? { url: siteUrl } : {}),
-    siteName: "HortiControl",
-    title: "Controle de Empenhos Hortifruti",
+    siteName: "EmpControl",
+    title: "EmpControl · Controle de Empenhos",
     description: "Pedidos, saldos e NEs sob controle.",
     ...(siteUrl
       ? {
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Controle de Empenhos Hortifruti",
+    title: "EmpControl · Controle de Empenhos",
     description: "Pedidos, saldos e NEs sob controle.",
     ...(siteUrl ? { images: [`${siteUrl}/og.png`] } : {}),
   },

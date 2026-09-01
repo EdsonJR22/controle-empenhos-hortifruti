@@ -1,4 +1,4 @@
-# HortiControl — Controle de Empenhos
+# EmpControl — Controle de Empenhos
 
 Aplicação web para controlar notas de empenho (NE), pedidos de hortifruti,
 notas fiscais, reforços de empenho e saldos por item.
@@ -160,4 +160,3 @@ Cloudflare Access ainda pode ser habilitado como uma segunda camada de proteçã
 Esta versão usa uma única credencial compartilhada. O logout remove a sessão do
 navegador; para invalidar todas as sessões já emitidas, troque também o valor de
 `AUTH_SECRET`.
-  

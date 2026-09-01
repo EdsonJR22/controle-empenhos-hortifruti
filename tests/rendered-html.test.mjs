@@ -20,7 +20,7 @@ async function readBuiltText(directory) {
 test("build contains the commitment-control experience", async () => {
   const distPath = fileURLToPath(new URL("../dist/", import.meta.url));
   const builtText = await readBuiltText(distPath);
-  assert.match(builtText, /Controle de Empenhos Hortifruti/i);
+  assert.match(builtText, /EmpControl/i);
   assert.match(builtText, /Empenhos de hortifruti/i);
   assert.match(builtText, /Acessar sistema/i);
   assert.match(builtText, /Projeto desenvolvido e mantido por: 3º SGT MACHADO/i);
