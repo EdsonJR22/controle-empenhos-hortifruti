@@ -327,10 +327,10 @@ export function CommitmentDetailView() {
                   </span>
                   <div>
                     <div className="order-title-line">
-                      <h3>{order.reference}</h3>
-                      <span className={`badge ${order.invoice ? "badge-success" : "badge-warning"}`}>
-                        {order.invoice ? `NF ${order.invoice.number}` : "Aguardando NF"}
-                      </span>
+                      <h3>{order.invoice ? `NF ${order.invoice.number}` : order.reference}</h3>
+                      {!order.invoice && (
+                        <span className="badge badge-warning">Aguardando NF</span>
+                      )}
                     </div>
                     <p>{formatDate(order.orderDate)} · {order.itemCount} item(ns)</p>
                   </div>
